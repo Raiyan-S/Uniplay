@@ -1,0 +1,765 @@
+/* Body styles for dark mode */
+body {
+    font-family: system-ui, Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding-top: 100px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* Ensure proper navbar height */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 100px;
+    /* Specify navbar height */
+}
+
+.logo-text {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 50px;
+    font-size: large;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+
+.auth-links {
+    display: flex;
+    gap: 15px;
+    margin-right: 30px;
+}
+
+
+.auth-links a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: large;
+}
+
+.auth-links a:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Main content styles */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    min-height: 80vh;
+    /* Ensure it takes the full viewport height */
+    padding-top: 60px;
+    /* Adjust for the fixed navbar */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect the centering */
+}
+
+.login-container {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-container input[type="email"]::placeholder,
+.login-container input[type="password"]::placeholder {
+    color: #888;
+}
+
+/* Improved button styling */
+.login-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    /* Slight scaling effect on hover */
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Image container */
+.image-container {
+    margin-right: 20px;
+}
+
+/* Smaller login image */
+.login-image {
+    width: 600px;
+    /* Adjust the width */
+    height: auto;
+    border-radius: 8px;
+}
+
+.google-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.google-button {
+    background-color: #db4437;
+    /* Google Red */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.google-button:hover {
+    background-color: #c13524;
+    /* Darker red on hover */
+}
+
+/* Styles for the message textarea */
+#message {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 100px;
+    /* Adjust height as needed */
+    resize: none;
+    /* Prevent resizing */
+    font-family: system-ui, Arial, Helvetica, sans-serif;
+}
+
+#message::placeholder {
+    color: #888;
+    font-family: system-ui, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 20px 40px;
+    /* Adjust padding to avoid horizontal overflow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /* Ensure it's within the page's width */
+    width: 100%;
+    /* Ensure footer takes up 100% of the screen width */
+    box-sizing: border-box;
+    /* Includes padding in the element's total width */
+    overflow-x: hidden;
+    /* Ensure no horizontal overflow */
+}
+
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+
+.first-row {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-image: linear-gradient(to right, rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.4), rgba(18, 18, 18, 0)),
+        url('Pictures/Media.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.first-row .content {
+    max-width: 600px;
+    z-index: 1;
+    margin-right: auto;
+}
+
+.first-row h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.first-row p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+.first-row .image-container {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    margin-right: 100px;
+}
+
+.first-row .right-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-left: auto;
+}
+
+.signup-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Second row layout */
+.second-row {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #1e1e1e;
+    /* Keep background color */
+    height: 70vh;
+    /* Adjust height to match third row */
+}
+
+/* Content container for the second row */
+.second-row-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+/* Image container for second row */
+.second-row .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    /* Ensures the image stays on the left */
+}
+
+.second-row-image {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: auto;
+    /* Ensures the image is aligned to the left */
+}
+
+/* Text container for second row */
+.second-row .text-container {
+    flex: 1.5;
+    padding-left: 40px;
+    /* Adjust padding as needed */
+    color: #ffffff;
+}
+
+.second-row .text-container h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.second-row .text-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #cccccc;
+}
+
+.guest-button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.guest-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Third row layout */
+.third-row {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #121212;
+    height: 70vh;
+    /* Adjust height as needed */
+}
+
+/* Content container for the third row */
+.third-row-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-left: 50px;
+}
+
+/* Image container for the third row */
+.third-row .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    /* Ensures the image is positioned on the right */
+}
+
+.third-row-image {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: auto;
+    /* Ensures the image stays to the right */
+}
+
+/* Text container for the third row */
+.third-row .text-container {
+    flex: 1.5;
+    padding-right: 40px;
+    color: #ffffff;
+}
+
+.third-row .text-container h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.third-row .text-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #cccccc;
+}
+
+.feature-list {
+    background-color: #1e1e1e; /* Dark background */
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.feature-list h1 {
+    text-align: center;
+    color: #ffffff; /* White header */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.feature-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.feature-list li {
+    background-color: #2b2b2b; /* Default dark grey for each feature */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.feature-list li:hover {
+    background-color: #4a4a4a; /* Lighter grey on hover */
+}
+
+.feature-list h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.feature-list p {
+    color: #dddddd; /* Lighter grey for descriptions */
+}
+
+/* Unique header colors */
+.feature-list li:nth-child(1) h2 {
+    color: #ff5733; /* Red */
+}
+
+.feature-list li:nth-child(2) h2 {
+    color: #33ff57; /* Green */
+}
+
+.feature-list li:nth-child(3) h2 {
+    color: #3357ff; /* Blue */
+}
+
+.feature-list li:nth-child(4) h2 {
+    color: #ff33a1; /* Pink */
+}
+
+.feature-list li:nth-child(5) h2 {
+    color: #ffcc33; /* Yellow */
+}
+
+.feature-list li:nth-child(6) h2 {
+    color: #33ffc4; /* Teal */
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed; /* Fixes the sidebar to the left */
+    top: 100px; /* Below the navbar */
+    left: 0; /* Aligns to the left */
+    width: 200px; /* Width of the sidebar */
+    background-color: #1e1e1e; /* Background color */
+    color: #ffffff; /* Text color */
+    padding: 20px; /* Padding */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    height: calc(100vh - 100px); /* Full height minus navbar */
+}
+
+.sidebar h2 {
+    font-size: 24px; /* Header size */
+    margin-bottom: 20px; /* Margin below header */
+}
+
+.sidebar ul {
+    list-style-type: none; /* No bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar ul li {
+    margin: 10px 0; /* Margin for list items */
+}
+
+.sidebar ul li a {
+    color: #ffffff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transition effect */
+}
+
+.sidebar ul li a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Main content adjustment */
+.main-content {
+    margin-left: 220px; /* Space for the sidebar */
+    padding: 20px; /* Padding for main content */
+}
+
+/* Poster styles */
+.poster {
+    width: 250px; /* Width of the poster */
+    height: 320px; /* Height of the poster */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    position: relative; /* For positioning the info */
+    margin: 10px; /* Space between posters */
+    border-radius: 20px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.poster:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.info {
+    position: absolute; /* Positioning the text */
+    bottom: 0; /* Align at the bottom */
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center text */
+    border-radius: 0 0 20px 20px; /* Rounded corners */
+}
+
+.first-row, .top-posters {
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center posters */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.home-first-row {
+    position: relative;
+    height: auto; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack header and posters */
+    align-items: center; /* Center content horizontally */
+    padding: 20px 50px; /* Adjust padding as needed */
+    background-image: linear-gradient(to right, rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.4), rgba(18, 18, 18, 0)),
+        url('Pictures/TheDarkKnightBackground.jpeg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.trending-header {
+    font-size: 24px; /* Adjust size as needed */
+    color: #ffffff; /* Change to your desired color */
+    align-self: flex-start; /* Align to the left */
+    margin-top: 450px; /* Adjust margin as needed */
+}
+
+.posters-container {
+    display: flex; /* Use flexbox for the posters */
+    justify-content: space-between; /* Distribute posters evenly */
+    flex-wrap: wrap; /* Allow wrapping of posters */
+    width: 100%; /* Full width */
+}
+
+/* Search bar input */
+.search-input {
+    width: 90%;
+    padding: 12px;
+    border: 2px solid #444;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #111;
+    color: white;
+    outline: none;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+}
+
+/* Search bar button (similar to login button) */
+.search-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    width: 50%;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    /* Slight scaling effect on hover */
+}
+
+/* Section for the 'Top in a week' and posters */
+.top-week-section {
+    display: flex;
+    flex-direction: column; /* Stack the header above the posters */
+    align-items: center; /* Center both header and posters */
+    padding: 20px;
+}
+
+.top-week-header {
+    font-size: 36px;
+    margin-bottom: 20px; /* Add spacing between header and posters */
+    text-align: center;
+    color: #ffffff; /* Ensure text is visible */
+}
+
+.posters-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.top-week-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Add space below the header and button */
+    width: 100%;
+}
+
+.top-week-header {
+    flex-grow: 1; /* Allow header to take available space */
+}
+
+.more-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    margin-left: auto;
+}
+
+.more-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+
+.movie-background {
+    height: 400px; /* Adjust height as needed */
+    background-size: cover; /* Ensure the image covers the entire row */
+    background-position: center; /* Center the image */
+    position: relative; /* To position elements inside it */
+    display: flex; /* To center the title */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: white; /* Optional: Change text color for visibility */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Optional: Add text shadow */
+}
+
+.movie-details {
+    display: flex;
+    padding: 20px;
+}
+
+.movie-info {
+    max-width: 600px; /* Adjust as needed */
+}
+
+.description-box, .watch-box {
+    margin: 20px 0;
+}
+
+.favorite-button {
+    background-color: #f39c12; /* Example color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.favorite-button:hover {
+    background-color: #d68910; /* Darker shade for hover effect */
+}
+
+.video-trailer {
+    flex: 0 1 35%; /* Adjust the width for the video section */
+}
+
+.video-trailer iframe {
+    width: 100%;
+    height: 315px; /* Set height for the video */
+}
+
+/* Main Content Styles */
+.about-content {
+    padding: 150px 200px 0 200px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1000px;
+    display: flex; /* Ensure flex layout */
+    align-items: flex-start; /* Align content to the top */
+}
+
+.text-section {
+    flex: 1; /* Allow text section to take available space */
+}
+
+.image-section {
+    flex: 0 0 400px; /* Increase the base width for the image section */
+}
+
+.image-section img {
+    border-radius: 8px;
+    width: 150%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 100px;
+}
