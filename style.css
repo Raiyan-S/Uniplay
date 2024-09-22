@@ -88,6 +88,7 @@ html, body {
     border-radius: 0.3em;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-left: 0.5em; /* Add space between the search bar and button */
 }   
 
 .search-button:hover, .login-btn:hover {
@@ -186,23 +187,6 @@ html, body {
     flex: 1;
 }
 
-/* Responsive styles */
-@media (max-width: 48em) { /* Approximately 768px */
-    .first-row, .second-row, .third-row {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .first-row .content, .second-row-content, .third-row-content {
-        text-align: center;
-    }
-
-    .first-row .right-image, .second-row-image, .third-row-image {
-        width: 100%;
-        max-width: 20em; /* Adjust as needed */
-    }
-}
-
 /* About Page Styles */
 .about-content {
     display: flex;
@@ -247,6 +231,27 @@ address {
 .image-section img {
     max-width: 80%; /* Ensure the image is responsive */
     height: auto; /* Maintain aspect ratio */
+}
+
+/* New Section Styles */
+section {
+    margin: 2em 0; /* Space above and below sections */
+    padding: 1.5em; /* Padding within sections */
+    background-color: #2a2a2a; /* Background color for new sections */
+    border-radius: 0.5em; /* Rounded corners */
+    color: #ffffff; /* Text color */
+}
+
+/* Section Headings */
+section h2 {
+    margin-bottom: 1em; /* Space below headings */
+    color: #bb86fc; /* Heading color */
+}
+
+/* Paragraph styles */
+section p {
+    line-height: 1.6; /* Improved readability */
+    margin-bottom: 1em; /* Space below paragraphs */
 }
 
 /* Login Page Styles */
@@ -434,7 +439,7 @@ form input[type="submit"]:hover {
 }
 
 /* Watch Now Button */
-.watch-now-btn {
+.details-btn {
     position: absolute; /* Absolute positioning */
     bottom: 20px; /* Distance from the bottom */
     right: 20px; /* Distance from the right */
@@ -449,7 +454,7 @@ form input[type="submit"]:hover {
 }
 
 /* Hover effect for button */
-.watch-now-btn:hover {
+.details-btn:hover {
     background-color: #e91e63; /* Darker shade on hover */
     transform: scale(1.05);
 }
