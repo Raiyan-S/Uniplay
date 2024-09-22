@@ -1,0 +1,140 @@
+<!-- ID: 2136108 
+Name: Raiyan Subedar
+Date: 9/22/2024 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniplay - Home Page</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <a href="home.html">
+            <img src="../Pictures/UniplayText.png" alt="Uniplay" class="logo-text">
+        </a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Landing Page</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button type="submit" class="search-button">Search</button>
+            <div class="auth-links">
+                <a href="login.html" class="login-btn">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="banner-row">
+            <div class="banner-info">
+                <h3>Everything Everywhere All at Once</h3>
+                <p>Action, Drama</p>
+            </div>
+            <button class="details-btn">Details</button>
+        </div>
+        <!-- First Row: Movie/Show Posters -->
+        <div class="home-first-row">
+            <div class="top-week-container">
+                <h2 class="trending-header">Trending Now</h2>
+                <button class="more-button">More</button>
+            </div>
+            <div class="posters-container">
+                <a href="movie.html" class="poster">
+                    <img src="../Pictures/TheDarkKnight.jpg" alt="The Dark Knight" class="poster">
+                    <div class="info">
+                        <h3>The Dark Knight</h3>
+                        <p>Action, Thriller</p>
+                    </div>
+                </a>
+                <div class="poster" style="background-image: url('../Pictures/TheGodFather.jpg');">
+                    <div class="info">
+                        <h3>The Godfather</h3>
+                        <p>Drama, Crime</p>
+                    </div>
+                </div>
+                <div class="poster" style="background-image: url('../Pictures/GravityFalls.jpg');">
+                    <div class="info">
+                        <h3>Gravity Falls</h3>
+                        <p>Animation, Comedy</p>
+                    </div>
+                </div>
+                <div class="poster" style="background-image: url('../Pictures/WhenTheySeeUs.jpg');">
+                    <div class="info">
+                        <h3>When They See Us</h3>
+                        <p>Drama, History</p>
+                    </div>
+                </div>
+                <div class="poster" style="background-image: url('../Pictures/SpidermanAcrossTheSpiderverse.jpg');">
+                    <div class="info">
+                        <h3>Spider-Man: Across the Spider-Verse</h3>
+                        <p>Animation, Adventure</p>
+                    </div>
+                </div>
+                <div class="poster" style="background-image: url('../Pictures/BreakingBad.jpg');">
+                    <div class="info">
+                        <h3>Breaking Bad</h3>
+                        <p>Crime, Thriller</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row: Top in a Week -->
+        <div class="top-week-section">
+            <div class="top-week-container">
+                <h2 class="top-week-header">Top in a Week</h2>
+                <button class="more-button">More</button>
+            </div>
+            <div class="posters-row">
+                <div class="poster" style="background-image: url('../Pictures/BluePlanetII.jpg');">
+                    <div class="info">
+                        <h3>Blue Planet II</h3>
+                        <p>Documentary, Nature</p>
+                    </div>
+                </div>
+                <div class="poster" style="background-image: url('../Pictures/FullMetalAlchemistBrotherhood.jpg');">
+                    <div class="info">
+                        <h3>Fullmetal Alchemist: Brotherhood</h3>
+                        <p>Anime, Fantasy</p>
+                    </div>
+                </div>
+                <div class="poster" style="background-image: url('../Pictures/Deadpool&Wolverine.jpg');">
+                    <div class="info">
+                        <h3>Deadpool & Wolverine</h3>
+                        <p>Action, Comedy</p>
+                    </div>
+                </div>
+                <div class="poster" style="background-image: url('../Pictures/TheOffice.jpg');">
+                    <div class="info">
+                        <h3>The Office</h3>
+                        <p>Sitcom, Comedy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-left">
+            <p>&copy 2024 Uniplay. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+            <p>Al-Hamra'a, Jeddah, Saudi Arabia</p>
+        </div>
+    </footer>
+</body>
+
+</html>
