@@ -3,6 +3,7 @@ body {
     font-family: system-ui, Arial, Helvetica, sans-serif;
     background-color: #121212;
     color: #ffffff;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     margin: 0;
     padding: 0;
 }
@@ -10,37 +11,87 @@ body {
 /* Navbar styles */
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #1e1e1e;
-    padding: 1.5em 2em;
+    justify-content: space-between;
+    padding: 1em 2em; /* Adjust padding as needed */
+    background-color: #121212; /* Dark background for the navbar */
+    transition: background-color 0.3s ease; /* Transition for background color */
 }
 
-.navbar a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 1.5em;
+.navbar:hover {
+    background-color: #1e1e1e; /* Change background on hover */
 }
 
-.navbar .logo-text {
-    height: 2.5em; /* Adjust as needed */
+.logo-text {
+    max-height: 6em; /* Set max height for the logo */
+    transition: transform 0.3s ease; /* Transition for scaling */
+}
+
+.logo-text:hover {
+    transform: scale(1.05); /* Scale up on hover */
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.auth-links a {
-    background-color: #bb86fc;
+.nav-links li {
+    margin: 0 1em; /* Spacing between links */
+}
+
+/* Navbar links */
+.nav-links a {
+    text-decoration: none;
     color: #ffffff;
-    padding: 0.75em 1em;
-    border-radius: 0.5em;
-    margin-left: 0.5em;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition for color and scaling */
 }
 
-.auth-links a:hover {
-    background-color: #9e7bcd;
+.nav-links a:hover {
+    color: #6200ea; /* Change color on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Search Bar styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-input {
+    width: 15em; /* Adjust width as needed */
+    padding: 0.5em;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.3em;
+    transition: background-color 0.3s ease;
+}
+
+.search-input:focus {
+    background-color: #373737; /* Darker background on focus */
+}
+
+.search-button, .login-btn {
+    padding: 0.5em 1em;
+    background-color: #6200ea;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}   
+
+.search-button:hover, .login-btn:hover {
+    background-color: #3700b3;
+    transform: scale(1.05);
+}
+
+.auth-links {
+    margin-left: auto; /* Push the auth links to the right */
 }
 
 /* First Row */
@@ -109,10 +160,12 @@ body {
     border-radius: 0.5em;
     text-decoration: none;
     margin-top: 1em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .signup-button:hover, .guest-button:hover {
     background-color: #3700b3;
+    transform: scale(1.05);
 }
 
 /* Footer styles */
@@ -191,19 +244,6 @@ address {
     height: auto; /* Maintain aspect ratio */
 }
 
-/* Footer styles (same as before) */
-.footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #1e1e1e;
-    padding: 1.5em;
-    color: #ffffff;
-}
-
-.footer-left, .footer-right {
-    flex: 1;
-}
-
 /* Login Page Styles */
 /* Register Page Styles */
 .login-wrapper {
@@ -277,10 +317,12 @@ form input[type="submit"] {
     background-color: #6200ea; /* Button background color */
     color: #ffffff; /* Button text color */
     cursor: pointer; /* Pointer on hover */
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 form input[type="submit"]:hover {
     background-color: #3700b3; /* Button hover color */
+    transform: scale(1.05);
 }
 
 /* Signup Link */
@@ -301,23 +343,12 @@ form input[type="submit"]:hover {
     padding: 0.75em 1.5em;
     border-radius: 0.3em; /* Rounded corners */
     cursor: pointer; /* Pointer on hover */
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .google-button:hover {
     background-color: #c13529; /* Darker red on hover */
-}
-
-/* Footer styles (same as before) */
-.footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #1e1e1e;
-    padding: 1.5em;
-    color: #ffffff;
-}
-
-.footer-left, .footer-right {
-    flex: 1;
+    transform: scale(1.05); /* Scale up on hover */
 }
 
 /* Services Page Styles */
@@ -373,118 +404,213 @@ form input[type="submit"]:hover {
     line-height: 1.5; /* Increased line height for readability */
 }
 
-/* Sidebar Styles */
-.sidebar {
-    width: 250px; /* Fixed width for the sidebar */
-    padding: 1em; /* Padding inside sidebar */
-    position: static; /* Fixed positioning */
-    height: auto; /* Adjust height to avoid covering footer */
-
-}
-
-.search-bar {
-    display: flex; /* Flex layout for search bar */
-    margin-bottom: 1em; /* Spacing below search bar */
-}
-
-.search-input {
-    flex-grow: 1; /* Take available space */
-    padding: 0.5em; /* Padding inside input */
-    border: none; /* Remove default border */
-    border-radius: 0.5em; /* Rounded corners */
-}
-
-.search-button {
-    padding: 0.5em; /* Padding inside button */
-    border: none; /* Remove default border */
-    border-radius: 0.5em; /* Rounded corners */
-    background-color: #ff4081; /* Unique button color */
-    color: #ffffff; /* Text color */
-    cursor: pointer; /* Pointer cursor on hover */
-}
-
-h2 {
-    margin: 1em 0; /* Spacing above and below headings */
-}
-
 /* Main Content Styles */
 .main-content {
-    margin-left: 270px; /* Offset for sidebar */
-    padding: 2em; /* Padding inside main content */
+    padding: 20px;
+}
+
+/* Banner Row */
+.banner-row {
+    background-image: url('Pictures/Banner.jpg');
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative; /* Make it a positioned element for absolute positioning of the button */
+}
+
+/* Banner Info */
+.banner-info {
+    position: absolute; /* Positioning to allow for proper placement */
+    bottom: 20px; /* Distance from the bottom */
+    left: 20px; /* Distance from the left */
+    color: white; /* Text color */
+}
+
+/* Watch Now Button */
+.watch-now-btn {
+    position: absolute; /* Absolute positioning */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: #ff4081; /* Button color */
+    color: white; /* Text color */
+    padding: 12px 20px; /* Increased padding */
+    font-size: 16px; /* Increased font size */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease;; /* Transition effect */
+}
+
+/* Hover effect for button */
+.watch-now-btn:hover {
+    background-color: #e91e63; /* Darker shade on hover */
+    transform: scale(1.05);
 }
 
 .home-first-row,
 .top-week-section {
-    margin-bottom: 2em; /* Spacing between sections */
+    margin-bottom: 40px;
+    overflow: hidden; /* Prevent scrolling */
+    height: auto; /* Allow height to adjust based on content */
+}
+
+.trending-header,
+.top-week-header {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .posters-container,
 .posters-row {
-    display: flex; /* Flex layout for posters */
-    overflow-x: auto; /* Horizontal scroll if necessary */
-    padding: 1em; /* Optional: Add some padding */
+    display: flex;
+    gap: 20px;
+    overflow: hidden; /* Prevent horizontal scrolling */
+    flex-wrap: nowrap; /* Prevent wrapping of items */
+    height: 100%; /* Full height of the parent */
 }
 
+/* Posters */
 .poster {
-    width: 200px; /* Fixed width for posters */
-    height: 300px; /* Fixed height for posters */
-    margin-right: 1em; /* Spacing between posters */
-    background-size: cover; /* Cover the background */
-    border-radius: 0.5em; /* Rounded corners */
-    position: relative; /* Positioning for info */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    background-size: cover; /* Maintain cover for background */
+    background-position: center;
+    height: 300px; /* Set fixed height */
+    width: 240px; /* Set fixed width */
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s;
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
 .poster:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-.posters-container::-webkit-scrollbar {
-    height: 8px; /* Height of the scrollbar */
-}
-
-.posters-container::-webkit-scrollbar-thumb {
-    background: #888; /* Color of the scrollbar thumb */
-    border-radius: 4px; /* Rounded corners for the thumb */
-}
-
-.posters-container::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Darker color on hover */
+    transform: scale(1.05);
 }
 
 .info {
-    position: absolute; /* Absolute positioning for info */
-    bottom: 0; /* Align to bottom */
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    padding: 0.5em; /* Padding inside info box */
-    width: 100%; /* Full width */
-    color: #ffffff; /* Text color */
-}
-
-.main-content {
-    background-image: url('Pictures/TheDarkKnightBackground.jpeg'); /* Replace with your image path */
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the image */
-    position: relative; /* Position for overlay */
-    padding-top: 20px; /* Add some space if needed */
-}
-
-.main-content::before {
-    content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    z-index: 1; /* Layer the overlay above the background but below the content */
+    left: 0; /* Align to the left */
+    right: 0; /* Stretch to the right */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+    box-sizing: border-box; /* Include padding in total width */
 }
 
-.main-content > * {
-    position: relative; /* Bring content above the overlay */
-    z-index: 2; /* Layer the content above the overlay */
+
+/* Top Week Section Container */
+.top-week-container {
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Space below the container */
 }
 
-.home-first-row {
-    margin-top: 20px; /* Adjust as needed to space from the navbar */
+/* More Button */
+.more-button {
+    background-color: #ff4081; /* Button color */
+    color: white; /* Text color */
+    padding: 12px 20px; /* Increased padding */
+    font-size: 16px; /* Increased font size */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease;; /* Transition effect */
+}
+
+/* Hover effect for More button */
+.more-button:hover {
+    background-color: #e91e63; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+}
+
+/* Movie Background */
+.movie-background {
+    height: 400px; /* Set height for the background */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px; /* Space below the background */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Movie Details */
+.movie-details {
+    display: flex;
+    gap: 20px; /* Space between poster and info */
+}
+
+/* Movie Info */
+.movie-info {
+    flex: 1; /* Take remaining space */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+    padding-right: 20px; /* Add padding to the right for scrollbar */
+}
+
+.movie-info h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.description-box, .watch-box {
+    margin-bottom: 20px;
+}
+
+.description-box h3, .watch-box h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+
+.favorite-button {
+    background-color: #ff4081; /* Button color */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.favorite-button:hover {
+    background-color: #e91e63; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+/* Video Trailer Container */
+.video-trailer-container {
+    display: flex;
+    flex-direction: row; /* Default to row */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: flex-end; /* Align to the right */
+    margin-top: 20px; /* Space above the trailer */
+}
+
+/* Video Trailer */
+.video-trailer {
+    display: flex;
+    flex-direction: column; /* Ensure the title and iframe stack */
+    align-items: center; /* Center the content */
+    margin-left: 20px; /* Space on the left */
+    width: 100%; /* Full width when wrapped */
+}
+
+/* Video Title */
+.video-trailer h4 {
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* Adjusting the iframe */
+.video-trailer iframe {
+    width: 100%; /* Full width of the container */
+    max-width: 800px; /* Maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500px; /* Increased maximum height */
+    border: none; /* Remove border */
 }

@@ -9,14 +9,6 @@
 </head>
 
 <body>
-    <!-- Sidebar Section -->
-    <aside class="sidebar">
-        <div class="search-bar">
-            <input type="text" class="search-input" placeholder="Search...">
-            <button type="submit" class="search-button">Search</button>
-        </div>
-        <h2>Favorites</h2>
-    </aside>
 
     <!-- Navbar Section -->
     <nav class="navbar">
@@ -30,17 +22,30 @@
             <li><a href="contact.html">Contact</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button type="submit" class="search-button">Search</button>
+        </div>
         <div class="auth-links">
             <a href="login.html" class="login-btn">Login</a>
-            <a href="register.html" class="signup-btn">Sign Up</a>
         </div>
     </nav>
 
     <!-- Main Content -->
     <main class="main-content">
+        <div class="banner-row">
+            <div class="banner-info">
+                <h3>Everything Everywhere All at Once</h3>
+                <p>Action, Drama</p>
+            </div>
+            <button class="watch-now-btn">Watch Now</button>
+        </div>
         <!-- First Row: Movie/Show Posters -->
         <div class="home-first-row">
-            <h2 class="trending-header">Trending Now</h2>
+            <div class="top-week-container">
+                <h2 class="trending-header">Trending Now</h2>
+                <button class="more-button">More</button>
+            </div>
             <div class="posters-container">
                 <a href="movie.html" class="poster" style="background-image: url('Pictures/TheDarkKnight.jpg');">
                     <div class="info">
