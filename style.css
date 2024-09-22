@@ -3,7 +3,6 @@ body {
     font-family: system-ui, Arial, Helvetica, sans-serif;
     background-color: #121212;
     color: #ffffff;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
     margin: 0;
     padding: 0;
 }
