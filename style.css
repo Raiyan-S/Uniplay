@@ -13,6 +13,7 @@ html, body {
 
 /* Navbar styles */
 .navbar {
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
