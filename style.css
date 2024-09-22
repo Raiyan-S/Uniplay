@@ -115,6 +115,10 @@ html, body {
 
 .first-row .content {
     flex: 1;
+    padding: 1em; /* Add some padding around the text */
+    background-color: rgba(30, 30, 30, 0.8); /* Semi-transparent background (adjust opacity) */
+    border-radius: 0.5em; /* Optional: Rounded corners for the text background */
+    color: #ffffff; /* Ensure the text is still readable */
 }
 
 .first-row .right-image {
@@ -132,13 +136,13 @@ html, body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start; /* Align content to the left */
     width: 100%;
 }
 
 .second-row-image {
     width: 20em; /* Adjust as needed */
 }
-
 
 /* Third Row */
 .third-row {
@@ -150,6 +154,7 @@ html, body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start; /* Align content to the left */
     width: 100%;
 }
 
