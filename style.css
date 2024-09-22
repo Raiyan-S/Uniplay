@@ -188,8 +188,14 @@ html, body {
     color: #ffffff;
 }
 
-.footer-left, .footer-right {
+.footer-left {
     flex: 1;
+    text-align: left; /* Aligns text to the left */
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right; /* Aligns text to the right */
 }
 
 /* About Page Styles */
