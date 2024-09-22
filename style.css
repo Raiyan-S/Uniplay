@@ -272,6 +272,14 @@ section p {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100%; /* Prevent overflow */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Image inside the container */
+.image-container img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .login-image {
