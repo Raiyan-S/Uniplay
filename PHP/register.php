@@ -1,7 +1,6 @@
 <!-- ID: 2136108 
 Name: Raiyan Subedar -->
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <!-- register.php -->
@@ -17,7 +16,7 @@ include 'header.php';
     </div>
     <div class="login-container">
         <h2>Create an Account</h2>
-        <form action="#" method="POST">
+        <form action="#" method="post">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" placeholder="Enter your username" required="required" />
 

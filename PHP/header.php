@@ -12,7 +12,7 @@ Name: Raiyan Subedar -->
 
 <body>
     <!-- Navbar Section -->
-    <nav class="navbar">
+    <div class="navbar">
         <a href="home.php">
             <img src="../Pictures/UniplayText.png" alt="Uniplay" class="logo-text" />
         </a>
@@ -26,4 +26,4 @@ Name: Raiyan Subedar -->
         <div class="auth-links">
             <a href="login.php" class="login-btn">Login</a>
         </div>
-    </nav>
+    </div>

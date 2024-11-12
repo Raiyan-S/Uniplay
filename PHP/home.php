@@ -1,7 +1,6 @@
 <!-- ID: 2136108 
 Name: Raiyan Subedar -->
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <!-- home.php -->
@@ -14,7 +13,7 @@ include 'header.php';
 <main class="main-content">
     <div class="banner-row">
         <div class="banner-info">
-            <h3>Everything Everywhere All at Once</h3>
+            <h1>Everything Everywhere All at Once</h1>
             <p>Action, Drama</p>
         </div>
         <button class="details-btn">Details</button>
@@ -85,7 +84,7 @@ include 'header.php';
                     <p>Anime, Fantasy</p>
                 </div>
             </div>
-            <div class="poster" style="background-image: url('../Pictures/Deadpool&Wolverine.jpg');">
+            <div class="poster" style="background-image: url('../Pictures/DeadpoolANDWolverine.jpg');">
                 <div class="info">
                     <h3>Deadpool & Wolverine</h3>
                     <p>Action, Comedy</p>
