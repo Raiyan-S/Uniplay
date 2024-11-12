@@ -562,3 +562,175 @@ form input[type="submit"]:hover {
     max-height: 500px; /* Increased maximum height */
     border: none; /* Remove border */
 }
+
+/* Feedback Page Styles */
+.feedback-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    padding: 2em;
+    background-color: #1e1e1e; /* Background color for the feedback section */
+    border-radius: 0.5em; /* Optional: Add rounded corners */
+}
+
+.feedback-container {
+    flex: 1; /* Take up available space */
+    color: #ffffff; /* Text color */
+}
+
+.feedback-container h2 {
+    margin-bottom: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5em 0 0.2em; /* Spacing for labels */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="submit"],
+form textarea,
+form select {
+    padding: 0.75em;
+    margin-bottom: 1em; /* Spacing for inputs */
+    border: none;
+    border-radius: 0.3em; /* Rounded corners */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+    background-color: #2a2a2a; /* Input background color */
+    color: #ffffff; /* Input text color */
+}
+
+form textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px; /* Minimum height for textarea */
+}
+
+form input[type="submit"] {
+    background-color: #6200ea; /* Button background color */
+    color: #ffffff; /* Button text color */
+    cursor: pointer; /* Pointer on hover */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3700b3; /* Button hover color */
+    transform: scale(1.05);
+}
+
+/* Picture Gallery Styles */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+    padding: 2em;
+    background-color: #1e1e1e; /* Background color for the gallery section */
+    border-radius: 0.5em; /* Optional: Add rounded corners */
+}
+
+.gallery h1 {
+    margin-bottom: 1em;
+    color: #ffffff; /* Text color */
+}
+
+.thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em; /* Space between thumbnails */
+}
+
+.thumbnail {
+    width: 150px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 0.3em; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.large-image {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.large-image img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0.3em; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+/* Resume Page Styles */
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+    padding: 2em;
+    background-color: #1e1e1e; /* Background color for the resume section */
+    border-radius: 0.5em; /* Optional: Add rounded corners */
+    color: #ffffff; /* Text color */
+}
+
+.resume-container h1 {
+    margin-bottom: 1em;
+}
+
+.resume-container object {
+    width: 100%;
+    height: 800px; /* Adjust height as needed */
+    border: none; /* Remove border */
+    border-radius: 0.3em; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+/* Table Page Styles */
+.table-container {
+    margin: 2em;
+    padding: 2em;
+    background-color: #1e1e1e; /* Background color for the table section */
+    border-radius: 0.5em; /* Optional: Add rounded corners */
+    color: #ffffff; /* Text color */
+}
+
+.table-container h1 {
+    margin-bottom: 1em;
+    text-align: center; /* Center the heading */
+}
+
+.release-schedule {
+    width: 100%;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin-bottom: 2em; /* Space below the table */
+}
+
+.release-schedule th, .release-schedule td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+.release-schedule caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}

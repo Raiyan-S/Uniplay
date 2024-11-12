@@ -8,6 +8,7 @@ Name: Raiyan Subedar -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?php echo $title ?? 'Uniplay'; ?></title>
     <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/print.css" media="print" />
 </head>
 
 <body>
