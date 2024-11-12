@@ -752,11 +752,11 @@ form input[type="submit"]:hover {
     color: #bb86fc; /* Unique caption color */
 }
 
-.release-schedule td:first-child {
+.release-schedule td:nth-child(1) {
     font-size: 1.2em; /* Make the text for the show/movie column bigger */
     text-align: center; /* Center the show/movie column */
 }
 
-.release-schedule td:last-child {
+.release-schedule td:nth-child(7) {
     text-align: center; /* Center the platform column */
 }
