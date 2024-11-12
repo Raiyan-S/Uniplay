@@ -12,8 +12,11 @@ include 'header.php';
 <!-- Video Section -->
 <div class="video-container">
     <h1>Watch the Latest Featured Film Trailer</h1>
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/wxN1T1uxQ2g" frameborder="0"
-        allowfullscreen="allowfullscreen"></iframe>
+    <object data="https://www.youtube.com/embed/wxN1T1uxQ2g" type="text/html" width="800" height="450">
+        <p>Your browser does not support embedded videos. You can watch the trailer on
+            <a href="https://www.youtube.com/watch?v=wxN1T1uxQ2g">YouTube</a>.
+        </p>
+    </object>
 </div>
 
 <!-- Footer Section -->
