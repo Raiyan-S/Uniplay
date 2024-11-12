@@ -163,6 +163,7 @@ body, html {
 .footer-right {
     flex: 1;
     text-align: right; /* Aligns text to the right */
+    margin-right: 1em; /* Add margin to the right */
 }
 
 .footer-icons {

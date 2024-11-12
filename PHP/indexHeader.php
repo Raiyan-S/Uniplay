@@ -20,10 +20,16 @@ Name: Raiyan Subedar -->
             <li><a href="index.php">Landing Page</a></li>
             <li><a href="PHP/home.php">Home</a></li>
             <li><a href="PHP/services.php">Services</a></li>
-            <li><a href="PHP/contact.php">Contact</a></li>
+            <li><a href="PHP/contact.php">Contact Us</a></li>
             <li><a href="PHP/about.php">About</a></li>
+            <li><a href="PHP/table.php">Table (Schedule)</a></li>
+            <li><a href="PHP/picture.php">Picture Gallery</a></li>
+            <li><a href="PHP/video.php">Video</a></li>
+            <li><a href="PHP/feedback.php">Feedback Form</a></li>
+            <li><a href="PHP/resume.php">Resume</a></li>
         </ul>
         <div class="auth-links">
             <a href="PHP/login.php" class="login-btn">Login</a>
         </div>
     </div>
+</body>
