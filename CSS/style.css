@@ -730,7 +730,7 @@ form input[type="submit"]:hover {
 .release-schedule th, .release-schedule td {
     border: 1px solid #6200ea; /* Unique border color */
     padding: 12px; /* Increased padding */
-    text-align: left;
+    text-align: center; /* Center all table content */
     background-color: #1e1e1e; /* Darker cell background */
     color: #ffffff; /* Cell text color */
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
@@ -739,7 +739,6 @@ form input[type="submit"]:hover {
 .release-schedule th {
     background-color: #6200ea; /* Unique header background color */
     color: #ffffff; /* Header text color */
-    text-align: center; /* Center the header row */
 }
 
 .release-schedule td:hover {
@@ -750,13 +749,4 @@ form input[type="submit"]:hover {
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #bb86fc; /* Unique caption color */
-}
-
-.release-schedule td:nth-child(1) {
-    font-size: 1.2em; /* Make the text for the show/movie column bigger */
-    text-align: center; /* Center the show/movie column */
-}
-
-.release-schedule td:nth-child(7) {
-    text-align: center; /* Center the platform column */
 }
