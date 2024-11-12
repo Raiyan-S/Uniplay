@@ -10,7 +10,7 @@ include 'header.php';
 ?>
 
 <!-- Resume Section -->
-<div class="resume-container" style="width: 80%; height: 1500px; padding: 20px;">
+<div class="resume-container" style="width: 90%; height: 800px; padding: 20px;">
     <h1>My Resume</h1>
     <!-- Embed PDF using the <object> tag -->
     <object data="..\Resume\Resume.pdf" type="application/pdf" width="100%" height="100%">

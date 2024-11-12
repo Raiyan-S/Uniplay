@@ -707,30 +707,46 @@ form input[type="submit"]:hover {
 .table-container {
     margin: 2em;
     padding: 2em;
-    background-color: #1e1e1e; /* Background color for the table section */
-    border-radius: 0.5em; /* Optional: Add rounded corners */
+    background-color: #2a2a2a; /* Darker background color for the table section */
+    border-radius: 0.5em; /* Add rounded corners */
     color: #ffffff; /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
 }
 
 .table-container h1 {
     margin-bottom: 1em;
     text-align: center; /* Center the heading */
+    color: #bb86fc; /* Unique heading color */
 }
 
 .release-schedule {
     width: 100%;
-    border: 1px solid #000;
+    border: 1px solid #6200ea; /* Unique border color */
     border-collapse: collapse;
     margin-bottom: 2em; /* Space below the table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
 }
 
 .release-schedule th, .release-schedule td {
-    border: 1px solid #000;
-    padding: 8px;
+    border: 1px solid #6200ea; /* Unique border color */
+    padding: 12px; /* Increased padding */
     text-align: left;
+    background-color: #1e1e1e; /* Darker cell background */
+    color: #ffffff; /* Cell text color */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.release-schedule th {
+    background-color: #6200ea; /* Unique header background color */
+    color: #ffffff; /* Header text color */
+}
+
+.release-schedule td:hover {
+    background-color: #373737; /* Change background on hover */
 }
 
 .release-schedule caption {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #bb86fc; /* Unique caption color */
 }

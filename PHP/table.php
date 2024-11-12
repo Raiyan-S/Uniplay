@@ -34,14 +34,14 @@ include 'header.php';
                     <td>Episode 1</td>
                     <td>Nov 15, 2024</td>
                     <td>9:00 PM</td>
-                    <td>Netflix</td>
+                    <td><img src="../Pictures/netflix.png" alt="Netflix" width="50" /></td>
                 </tr>
                 <tr>
                     <td>Season 2</td>
                     <td>Episode 2</td>
                     <td>Nov 22, 2024</td>
                     <td>9:00 PM</td>
-                    <td>Netflix</td>
+                    <td><img src="../Pictures/netflix.png" alt="Netflix" width="50" /></td>
                 </tr>
 
                 <!-- Movie: The Last Duel -->
@@ -52,7 +52,7 @@ include 'header.php';
                     <td>N/A</td>
                     <td>Nov 20, 2024</td>
                     <td>8:00 PM</td>
-                    <td>HBO Max</td>
+                    <td><img src="../Pictures/hbo.png" alt="HBO Max" width="50" /></td>
                 </tr>
 
                 <!-- Show: Stranger Things -->
@@ -63,14 +63,14 @@ include 'header.php';
                     <td>Episode 1</td>
                     <td>Nov 25, 2024</td>
                     <td>9:00 PM</td>
-                    <td>Netflix</td>
+                    <td><img src="../Pictures/netflix.png" alt="Netflix" width="50" /></td>
                 </tr>
                 <tr>
                     <td>Season 5</td>
                     <td>Episode 2</td>
                     <td>Dec 2, 2024</td>
                     <td>9:00 PM</td>
-                    <td>Netflix</td>
+                    <td><img src="../Pictures/netflix.png" alt="Netflix" width="50" /></td>
                 </tr>
 
                 <!-- Movie: Dune Part Two -->
@@ -81,7 +81,7 @@ include 'header.php';
                     <td>N/A</td>
                     <td>Nov 30, 2024</td>
                     <td>7:00 PM</td>
-                    <td>Warner Bros.</td>
+                    <td><img src="../Pictures/warner_bros.png" alt="Warner Bros." width="50" /></td>
                 </tr>
 
                 <!-- Show: The Mandalorian -->
@@ -92,14 +92,14 @@ include 'header.php';
                     <td>Episode 1</td>
                     <td>Dec 5, 2024</td>
                     <td>8:00 PM</td>
-                    <td>Disney+</td>
+                    <td><img src="../Pictures/disney_plus.png" alt="Disney+" width="50" /></td>
                 </tr>
                 <tr>
                     <td>Season 4</td>
                     <td>Episode 2</td>
                     <td>Dec 12, 2024</td>
                     <td>8:00 PM</td>
-                    <td>Disney+</td>
+                    <td><img src="../Pictures/disney_plus.png" alt="Disney+" width="50" /></td>
                 </tr>
 
                 <!-- Footer row indicating more content -->
