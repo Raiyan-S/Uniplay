@@ -1,6 +1,7 @@
 <!-- ID: 2136108 
 Name: Raiyan Subedar -->
-<!DOCTYPE html>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <!-- movie.php -->
@@ -21,7 +22,7 @@ include 'header.php';
         <div class="poster" style="background-image: url('../Pictures/TheDarkKnight.jpg');"></div>
         <div class="movie-info">
             <h2>The Dark Knight</h2>
-            <p>Rating: ★★★★☆</p>
+            <p>Rating: &#9733;&#9733;&#9733;&#9733;&#9734;</p>
             <div class="description-box">
                 <h3>Description</h3>
                 <p>When a menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman, James
@@ -40,7 +41,8 @@ include 'header.php';
         <div class="video-trailer-container">
             <div class="video-trailer">
                 <h4>Trailer</h4>
-                <iframe src="https://www.youtube.com/embed/EXeTwQWrcwY" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/EXeTwQWrcwY" frameborder="0"
+                    allowfullscreen="allowfullscreen"></iframe>
             </div>
         </div>
     </div>

@@ -4,17 +4,17 @@ Name: Raiyan Subedar -->
 <!-- header.php -->
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?php echo $title ?? 'Uniplay'; ?></title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css" />
 </head>
 
 <body>
     <!-- Navbar Section -->
     <nav class="navbar">
         <a href="home.php">
-            <img src="../Pictures/UniplayText.png" alt="Uniplay" class="logo-text">
+            <img src="../Pictures/UniplayText.png" alt="Uniplay" class="logo-text" />
         </a>
         <ul class="nav-links">
             <li><a href="../index.php">Landing Page</a></li>

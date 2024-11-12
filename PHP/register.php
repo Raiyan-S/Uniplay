@@ -1,6 +1,7 @@
 <!-- ID: 2136108 
 Name: Raiyan Subedar -->
-<!DOCTYPE html>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <!-- register.php -->
@@ -18,17 +19,18 @@ include 'header.php';
         <h2>Create an Account</h2>
         <form action="#" method="POST">
             <label for="username">Username:</label>
-            <input type="email" id="username" name="username" placeholder="Enter your username" required />
+            <input type="text" id="username" name="username" placeholder="Enter your username" required="required" />
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            <input type="email" id="email" name="email" placeholder="Enter your email" required="required" />
 
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required />
+            <input type="password" id="password" name="password" placeholder="Enter your password"
+                required="required" />
 
             <label for="confirm-password">Confirm Password:</label>
             <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password"
-                required />
+                required="required" />
 
             <input type="submit" value="Register" class="login-button" />
         </form>

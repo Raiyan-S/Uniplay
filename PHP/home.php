@@ -1,6 +1,7 @@
 <!-- ID: 2136108 
 Name: Raiyan Subedar -->
-<!DOCTYPE html>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <!-- home.php -->
@@ -26,7 +27,7 @@ include 'header.php';
         </div>
         <div class="posters-container">
             <a href="movie.php" class="poster">
-                <img src="../Pictures/TheDarkKnight.jpg" alt="The Dark Knight" class="poster">
+                <img src="../Pictures/TheDarkKnight.jpg" alt="The Dark Knight" class="poster" />
                 <div class="info">
                     <h3>The Dark Knight</h3>
                     <p>Action, Thriller</p>
