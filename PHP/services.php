@@ -1,0 +1,70 @@
+<!-- ID: 2136108 
+Name: Raiyan Subedar
+Date: 9/22/2024 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniplay - Services</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <a href="home.html">
+            <img src="../Pictures/UniplayText.png" alt="Uniplay" class="logo-text">
+        </a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Landing Page</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="auth-links">
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section class="feature-list">
+        <h1>Features of Uniplay</h1>
+        <ul>
+            <li>
+                <h2>Personalized Recommendations</h2>
+                <p>Receive tailored suggestions based on your viewing history and preferences. Uniplay analyzes your viewing habits to provide you with customized content that aligns with your interests, making it easier to discover new shows and movies you'll love.</p>
+            </li>
+            <li>
+                <h2>Multi-Device Access</h2>
+                <p>Enjoy seamless tracking of your favorite shows across multiple devices, including smartphones, tablets, and smart TVs. Whether you’re at home or on the go, you can access your Uniplay account from any device, ensuring you stay updated no matter where you are.</p>
+            </li>
+            <li>
+                <h2>Watchlist Management</h2>
+                <p>Create and manage your watchlist effortlessly with a simple "favorite" button for each show or movie. This feature allows you to easily track the content you're interested in, ensuring you never miss out on your favorite series or upcoming releases.</p>
+            </li>
+            <li>
+                <h2>Ad-Free Experience</h2>
+                <p>Experience uninterrupted content tracking without any ads. This allows you to immerse yourself in managing your viewing preferences without distractions, making your interaction with Uniplay smooth and enjoyable.</p>
+            </li>
+            <li>
+                <h2>User-Friendly Interface</h2>
+                <p>Navigate effortlessly through an intuitive design that simplifies finding and managing your favorite content. The user interface is designed to be clean and straightforward, ensuring that you can quickly locate shows, track updates, and customize your experience without any hassle.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-left">
+            <p>&copy 2024 Uniplay. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+            <p>Al-Hamra'a, Jeddah, Saudi Arabia</p>
+        </div>
+    </footer>
+</body>
+
+</html>

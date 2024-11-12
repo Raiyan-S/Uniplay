@@ -1,22 +1,19 @@
-/* Body styles for dark mode */
-body {
+/* General Styles */
+body, html {
+    height: 100%; /* Allow full height for the body */
+    margin: 0;
+    padding: 0;
     font-family: system-ui, Arial, Helvetica, sans-serif;
     background-color: #121212;
     color: #ffffff;
-    margin: 0;
-    padding: 0;
 }
 
-html, body {
-    height: 100%; /* Allow full height for the body */
-}
-
-/* Navbar styles */
+/* Navbar Styles */
 .navbar {
-    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 1em 2em; /* Adjust padding as needed */
     background-color: #121212; /* Dark background for the navbar */
     transition: background-color 0.3s ease; /* Transition for background color */
@@ -47,7 +44,6 @@ html, body {
     margin: 0 1em; /* Spacing between links */
 }
 
-/* Navbar links */
 .nav-links a {
     text-decoration: none;
     color: #ffffff;
@@ -59,7 +55,11 @@ html, body {
     transform: scale(1.05); /* Scale up on hover */
 }
 
-/* Search Bar styles */
+.auth-links {
+    margin-left: auto; /* Push the auth links to the right */
+}
+
+/* Search Bar Styles */
 .search-bar {
     display: flex;
     align-items: center;
@@ -80,7 +80,7 @@ html, body {
     background-color: #373737; /* Darker background on focus */
 }
 
-.search-button, .login-btn {
+.search-button, .login-btn, .signup-button, .guest-button, .details-btn, .more-button, .favorite-button {
     padding: 0.5em 1em;
     background-color: #6200ea;
     color: #ffffff;
@@ -89,18 +89,14 @@ html, body {
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
     margin-left: 0.5em; /* Add space between the search bar and button */
-}   
+}
 
-.search-button:hover, .login-btn:hover {
+.search-button:hover, .login-btn:hover, .signup-button:hover, .guest-button:hover, .details-btn:hover, .more-button:hover, .favorite-button:hover {
     background-color: #3700b3;
     transform: scale(1.05);
 }
 
-.auth-links {
-    margin-left: auto; /* Push the auth links to the right */
-}
-
-/* First Row */
+/* First Row Styles */
 .first-row {
     display: flex;
     justify-content: space-between;
@@ -125,14 +121,14 @@ html, body {
     width: 20em; /* Adjust as needed */
 }
 
-/* Second Row */
+/* Second Row Styles */
 .second-row {
     display: flex;
     padding: 3em 2em;
     background-color: #1e1e1e; /* Change this color as desired */
 }
 
-.second-row-content {
+.second-row-content, .third-row-content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -140,46 +136,17 @@ html, body {
     width: 100%;
 }
 
-.second-row-image {
+.second-row-image, .third-row-image {
     width: 20em; /* Adjust as needed */
 }
 
-/* Third Row */
+/* Third Row Styles */
 .third-row {
     display: flex;
     padding: 3em 2em;
 }
 
-.third-row-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start; /* Align content to the left */
-    width: 100%;
-}
-
-.third-row-image {
-    width: 20em; /* Adjust as needed */
-}
-
-/* Button styles */
-.signup-button, .guest-button {
-    display: inline-block;
-    background-color: #6200ea;
-    color: #ffffff;
-    padding: 0.75em 1.5em;
-    border-radius: 0.5em;
-    text-decoration: none;
-    margin-top: 1em;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.signup-button:hover, .guest-button:hover {
-    background-color: #3700b3;
-    transform: scale(1.05);
-}
-
-/* Footer styles */
+/* Footer Styles */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -208,7 +175,6 @@ html, body {
     border-radius: 0.5em; /* Optional: Add rounded corners */
 }
 
-/* Text Section */
 .text-section {
     flex: 1; /* Take up available space */
     color: #ffffff; /* Text color */
@@ -218,7 +184,6 @@ html, body {
     margin-bottom: 1em;
 }
 
-/* Blockquote styles */
 blockquote {
     font-style: italic;
     margin: 1em 0;
@@ -226,12 +191,10 @@ blockquote {
     border-left: 2px solid #bb86fc; /* Optional: styling for blockquote */
 }
 
-/* Address styles */
 address {
     margin-top: 1em;
 }
 
-/* Image Section */
 .image-section {
     flex: 1; /* Take up available space */
     display: flex;
@@ -253,20 +216,17 @@ section {
     color: #ffffff; /* Text color */
 }
 
-/* Section Headings */
 section h2 {
     margin-bottom: 1em; /* Space below headings */
     color: #bb86fc; /* Heading color */
 }
 
-/* Paragraph styles */
 section p {
     line-height: 1.6; /* Improved readability */
     margin-bottom: 1em; /* Space below paragraphs */
 }
 
-/* Login Page Styles */
-/* Register Page Styles */
+/* Login and Register Page Styles */
 .login-wrapper {
     display: flex;
     justify-content: center;
@@ -277,7 +237,6 @@ section p {
     border-radius: 0.5em; /* Optional: Add rounded corners */
 }
 
-/* Image Container */
 .image-container {
     flex: 1; /* Take up available space */
     display: flex;
@@ -287,18 +246,11 @@ section p {
     overflow: hidden; /* Hide overflow */
 }
 
-/* Image inside the container */
-.image-container img {
+.image-container img, .login-image {
     max-width: 100%; /* Responsive image */
     height: auto; /* Maintain aspect ratio */
 }
 
-.login-image {
-    max-width: 100%; /* Ensure the image is responsive */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Login Container */
 .login-container {
     flex: 1; /* Take up available space */
     color: #ffffff; /* Text color */
@@ -309,7 +261,6 @@ section p {
     margin-bottom: 1em;
 }
 
-/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
@@ -330,14 +281,13 @@ form textarea {
 }
 
 form input[type="email"],
-form input[type="password"] {
+form input[type="password"],
+form textarea {
     background-color: #2a2a2a; /* Input background color */
     color: #ffffff; /* Input text color */
 }
 
 form textarea {
-    background-color: #2a2a2a; /* Textarea background color */
-    color: #ffffff; /* Textarea text color */
     resize: vertical; /* Allow vertical resizing */
     min-height: 100px; /* Minimum height for textarea */
 }
@@ -354,12 +304,10 @@ form input[type="submit"]:hover {
     transform: scale(1.05);
 }
 
-/* Signup Link */
 .signup-link {
     margin-top: 1em;
 }
 
-/* Google Login Button */
 .google-login {
     margin-top: 1em;
     text-align: center; /* Center the text */
@@ -438,7 +386,7 @@ form input[type="submit"]:hover {
     padding: 20px;
 }
 
-/* Banner Row */
+/* Banner Row Styles */
 .banner-row {
     background-image: url('../Pictures/Banner.jpg');
     height: 300px;
@@ -449,7 +397,6 @@ form input[type="submit"]:hover {
     position: relative; /* Make it a positioned element for absolute positioning of the button */
 }
 
-/* Banner Info */
 .banner-info {
     position: absolute; /* Positioning to allow for proper placement */
     bottom: 20px; /* Distance from the bottom */
@@ -457,7 +404,6 @@ form input[type="submit"]:hover {
     color: white; /* Text color */
 }
 
-/* Watch Now Button */
 .details-btn {
     position: absolute; /* Absolute positioning */
     bottom: 20px; /* Distance from the bottom */
@@ -469,30 +415,27 @@ form input[type="submit"]:hover {
     border: none; /* No border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Pointer on hover */
-    transition: background-color 0.3s ease;; /* Transition effect */
+    transition: background-color 0.3s ease; /* Transition effect */
 }
 
-/* Hover effect for button */
 .details-btn:hover {
     background-color: #e91e63; /* Darker shade on hover */
     transform: scale(1.05);
 }
 
-.home-first-row,
-.top-week-section {
+/* Home Page Styles */
+.home-first-row, .top-week-section {
     margin-bottom: 40px;
     overflow: hidden; /* Prevent scrolling */
     height: auto; /* Allow height to adjust based on content */
 }
 
-.trending-header,
-.top-week-header {
+.trending-header, .top-week-header {
     font-size: 2em;
     margin-bottom: 20px;
 }
 
-.posters-container,
-.posters-row {
+.posters-container, .posters-row {
     display: flex;
     gap: 20px;
     overflow: hidden; /* Prevent horizontal scrolling */
@@ -500,7 +443,6 @@ form input[type="submit"]:hover {
     height: 100%; /* Full height of the parent */
 }
 
-/* Posters */
 .poster {
     background-size: cover; /* Maintain cover for background */
     background-position: center;
@@ -528,8 +470,6 @@ form input[type="submit"]:hover {
     box-sizing: border-box; /* Include padding in total width */
 }
 
-
-/* Top Week Section Container */
 .top-week-container {
     display: flex; /* Use Flexbox */
     justify-content: space-between; /* Space between elements */
@@ -537,7 +477,6 @@ form input[type="submit"]:hover {
     margin-bottom: 20px; /* Space below the container */
 }
 
-/* More Button */
 .more-button {
     background-color: #ff4081; /* Button color */
     color: white; /* Text color */
@@ -546,21 +485,15 @@ form input[type="submit"]:hover {
     border: none; /* No border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Pointer on hover */
-    transition: background-color 0.3s ease;; /* Transition effect */
+    transition: background-color 0.3s ease; /* Transition effect */
 }
 
-/* Hover effect for More button */
 .more-button:hover {
     background-color: #e91e63; /* Darker shade on hover */
     transform: scale(1.05);
 }
 
-/* Main Content */
-.main-content {
-    padding: 20px;
-}
-
-/* Movie Background */
+/* Movie Page Styles */
 .movie-background {
     height: 400px; /* Set height for the background */
     background-size: cover;
@@ -569,13 +502,11 @@ form input[type="submit"]:hover {
     border-radius: 10px; /* Rounded corners */
 }
 
-/* Movie Details */
 .movie-details {
     display: flex;
     gap: 20px; /* Space between poster and info */
 }
 
-/* Movie Info */
 .movie-info {
     flex: 1; /* Take remaining space */
     overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
@@ -596,23 +527,6 @@ form input[type="submit"]:hover {
     margin-bottom: 5px;
 }
 
-
-.favorite-button {
-    background-color: #ff4081; /* Button color */
-    color: white; /* Text color */
-    padding: 10px 15px; /* Padding */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer on hover */
-    transition: background-color 0.3s ease; /* Transition effect */
-}
-
-.favorite-button:hover {
-    background-color: #e91e63; /* Darker shade on hover */
-    transform: scale(1.05);
-}
-
-/* Video Trailer Container */
 .video-trailer-container {
     display: flex;
     flex-direction: row; /* Default to row */
@@ -621,7 +535,6 @@ form input[type="submit"]:hover {
     margin-top: 20px; /* Space above the trailer */
 }
 
-/* Video Trailer */
 .video-trailer {
     display: flex;
     flex-direction: column; /* Ensure the title and iframe stack */
@@ -630,12 +543,10 @@ form input[type="submit"]:hover {
     width: 100%; /* Full width when wrapped */
 }
 
-/* Video Title */
 .video-trailer h4 {
     margin-bottom: 10px; /* Space below the title */
 }
 
-/* Adjusting the iframe */
 .video-trailer iframe {
     width: 100%; /* Full width of the container */
     max-width: 800px; /* Maximum width for larger screens */
