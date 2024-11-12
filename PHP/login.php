@@ -9,30 +9,30 @@ $title = 'Uniplay - Login';
 include 'header.php';
 ?>
 
-    <!-- Main Content Below Navbar -->
-    <div class="login-wrapper">
-        <!-- Your login form or content here -->
-        <div class="image-container">
-            <img src="../Pictures/LoginRegister.png" alt="Uniplay" class="login-image">
-        </div>
-        <div class="login-container">
-            <h2>Login to Uniplay</h2>
-            <form action="#" method="POST">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required />
-                <br />
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required />
-                <input type="submit" value="Login" class="login-button" />
-            </form>
-            <div class="signup-link">
-                <p>Don't have an account? <a href="register.php">Sign Up</a></p>
-            </div>
+<!-- Main Content Below Navbar -->
+<div class="login-wrapper">
+    <!-- Your login form or content here -->
+    <div class="image-container">
+        <img src="../Pictures/LoginRegister.png" alt="Uniplay" class="login-image">
+    </div>
+    <div class="login-container">
+        <h2>Login to Uniplay</h2>
+        <form action="#" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            <br />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required />
+            <input type="submit" value="Login" class="login-button" />
+        </form>
+        <div class="signup-link">
+            <p>Don't have an account? <a href="register.php">Sign Up</a></p>
         </div>
     </div>
+</div>
 
-    <!-- Footer Section -->
-    <?php include 'footer.php'; ?>
+<!-- Footer Section -->
+<?php include 'footer.php'; ?>
 </body>
 
 </html>
