@@ -12,14 +12,12 @@ include 'header.php';
 <!-- Video Section -->
 <div class="video-container">
     <h1>Watch the Latest Featured Film Trailer</h1>
-    <object width="640" height="360">
-        <param name="movie" value="https://www.youtube.com/watch?v=wxN1T1uxQ2g">
-        <embed src="https://www.youtube.com/watch?v=wxN1T1uxQ2g" type="application/x-shockwave-flash" width="640" height="360">
-        </embed>
-    </object>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/wxN1T1uxQ2g" frameborder="0"
+        allowfullscreen="allowfullscreen"></iframe>
 </div>
 
 <!-- Footer Section -->
 <?php include 'footer.php'; ?>
 </body>
+
 </html>

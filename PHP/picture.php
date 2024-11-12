@@ -24,14 +24,8 @@ include 'header.php';
     </div>
 </div>
 
-<!-- JavaScript for Image Gallery -->
-<script>
-    function showImage(src) {
-        var largeImage = document.getElementById("large-image");
-        largeImage.src = src;
-        largeImage.style.display = "block";
-    }
-</script>
+<!-- JavaScript for Picture Gallery -->
+<script type="text/javascript" src="../JS/script.js"></script>
 
 <!-- Footer Section -->
 <?php include 'footer.php'; ?>

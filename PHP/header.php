@@ -23,7 +23,7 @@ Name: Raiyan Subedar -->
             <li><a href="services.php">Services</a></li>
             <li><a href="contact.php">Contact Us</a></li>
             <li><a href="about.php">About</a></li>
-            <li><a href="table.php">Table (Schedule)</a></li>
+            <li><a href="table.php">Movies/Shows Schedule</a></li>
             <li><a href="picture.php">Picture Gallery</a></li>
             <li><a href="video.php">Video</a></li>
             <li><a href="feedback.php">Feedback Form</a></li>
@@ -33,4 +33,3 @@ Name: Raiyan Subedar -->
             <a href="login.php" class="login-btn">Login</a>
         </div>
     </div>
-</body>
