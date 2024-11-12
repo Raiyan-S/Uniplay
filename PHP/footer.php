@@ -2,7 +2,7 @@
 Name: Raiyan Subedar -->
 
 <!-- PHP/footer.php -->
-<<div class="footer">>
+<div class="footer">
     <div class="footer-left">
         <p>&copy; 2024 Uniplay. All rights reserved.</p>
     </div>
