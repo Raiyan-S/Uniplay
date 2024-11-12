@@ -1,37 +1,13 @@
 <!-- ID: 2136108 
-Name: Raiyan Subedar
-Date: 9/22/2024 -->
+Name: Raiyan Subedar -->
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uniplay - Movie Page</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
-
-<body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-        <a href="home.html">
-            <img src="../Pictures/UniplayText.png" alt="Uniplay" class="logo-text">
-        </a>
-        <ul class="nav-links">
-            <li><a href="../index.html">Landing Page</a></li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-        <div class="search-bar"></div>
-            <input type="text" class="search-input" placeholder="Search...">
-            <button type="submit" class="search-button">Search</button>
-        </div>
-        <div class="auth-links">
-            <a href="login.html" class="login-btn">Login</a>
-        </div>
-    </nav>
+<!-- movie.php -->
+<?php
+$title = 'Uniplay - Movie Page';
+include 'header.php';
+?>
 
     <!-- Main Content -->
     <main class="main-content">
@@ -42,7 +18,7 @@ Date: 9/22/2024 -->
 
         <!-- Second Row: Movie Details -->
         <div class="movie-details">
-            <div class="poster" style="background-image: url('../Pictures//TheDarkKnight.jpg');"></div>
+            <div class="poster" style="background-image: url('../Pictures/TheDarkKnight.jpg');"></div>
             <div class="movie-info">
                 <h2>The Dark Knight</h2>
                 <p>Rating: ★★★★☆</p>
@@ -71,14 +47,7 @@ Date: 9/22/2024 -->
     </main>
 
     <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-left">
-            <p>&copy 2024 Uniplay. All rights reserved.</p>
-        </div>
-        <div class="footer-right">
-            <p>Al-Hamra'a, Jeddah, Saudi Arabia</p>
-        </div>
-    </footer>
+    <?php include 'footer.php'; ?>
 </body>
 
 </html>
