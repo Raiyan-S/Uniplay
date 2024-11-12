@@ -4,10 +4,8 @@ Name: Raiyan Subedar -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <!-- login.php -->
-<?php
-$title = 'Uniplay - Login';
-include 'header.php';
-?>
+<?php $title = 'Uniplay - Login';
+include 'header.php'; ?>
 
 <!-- Main Content Below Navbar -->
 <div class="login-wrapper">
@@ -18,13 +16,19 @@ include 'header.php';
     <div class="login-container">
         <h2>Login to Uniplay</h2>
         <form action="#" method="post">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required="required" />
-            <br />
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password"
-                required="required" />
-            <input type="submit" value="Login" class="login-button" />
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" />
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" />
+            </div>
+
+            <div>
+                <input type="submit" value="Login" class="login-button" />
+            </div>
         </form>
         <div class="signup-link">
             <p>Don't have an account? <a href="register.php">Sign Up</a></p>

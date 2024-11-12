@@ -17,22 +17,31 @@ include 'header.php';
     <div class="login-container">
         <h2>Create an Account</h2>
         <form action="#" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username" required="required" />
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" />
+            </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required="required" />
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" />
+            </div>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password"
-                required="required" />
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" />
+            </div>
 
-            <label for="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password"
-                required="required" />
+            <div>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" />
+            </div>
 
-            <input type="submit" value="Register" class="login-button" />
+            <div>
+                <input type="submit" value="Register" class="login-button" />
+            </div>
         </form>
+
         <div class="signup-link">
             <p>Already have an account? <a href="login.php">Login</a></p>
         </div>

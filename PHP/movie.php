@@ -10,7 +10,7 @@ include 'header.php';
 ?>
 
 <!-- Main Content -->
-<main class="main-content">
+<div class="main-content">
 
     <!-- First Row: Background Image -->
     <div class="movie-background" style="background-image: url('../Pictures/TheDarkKnightBackground.jpeg');">
@@ -40,15 +40,21 @@ include 'header.php';
         <div class="video-trailer-container">
             <div class="video-trailer">
                 <h4>Trailer</h4>
-                <iframe src="https://www.youtube.com/embed/EXeTwQWrcwY" frameborder="0"
-                    allowfullscreen="allowfullscreen"></iframe>
+                <object data="https://www.youtube.com/embed/EXeTwQWrcwY" type="text/html" width="640" height="360">
+                    <param name="movie" value="https://www.youtube.com/embed/EXeTwQWrcwY" />
+                    <param name="allowFullScreen" value="true" />
+                    <param name="frameborder" value="0" />
+                    <embed src="https://www.youtube.com/embed/EXeTwQWrcwY" type="application/x-shockwave-flash" width="640" height="360" allowfullscreen="true" frameborder="0"></embed>
+                </object>
             </div>
         </div>
     </div>
-</main>
+</div>
 
 <!-- Footer Section -->
-<?php include 'footer.php'; ?>
+<div class="footer">
+    <?php include 'footer.php'; ?>
+</div>
 </body>
 
 </html>

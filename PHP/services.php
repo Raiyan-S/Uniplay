@@ -10,7 +10,7 @@ include 'header.php';
 ?>
 
 <!-- Services Section -->
-<section class="feature-list">
+<div class="feature-list">
     <h1>Features of Uniplay</h1>
     <ul>
         <li>
@@ -44,7 +44,7 @@ include 'header.php';
                 locate shows, track updates, and customize your experience without any hassle.</p>
         </li>
     </ul>
-</section>
+</div>
 
 <!-- Footer Section -->
 <?php include 'footer.php'; ?>

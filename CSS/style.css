@@ -165,6 +165,13 @@ body, html {
     text-align: right; /* Aligns text to the right */
 }
 
+.footer-icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    align-items: center; /* Center the icons vertically */
+    gap: 1em; /* Space between icons */
+}
+
 /* About Page Styles */
 .about-content {
     display: flex;
