@@ -7,7 +7,7 @@ Date:  -->
 <!-- index.php -->
 <?php
 $title = 'Uniplay - Landing Page';
-include 'indexHeader.php';
+include 'PHP/indexHeader.php';
 ?>
 
     <!-- First Row: Welcome Section -->
