@@ -10,7 +10,7 @@ include 'header.php';
 ?>
 
 <!-- Main Content -->
-<main class="main-content">
+<div class="main-content">
     <div class="banner-row">
         <div class="banner-info">
             <h1>Everything Everywhere All at Once</h1>
@@ -86,7 +86,7 @@ include 'header.php';
             </div>
             <div class="poster" style="background-image: url('../Pictures/DeadpoolANDWolverine.jpg');">
                 <div class="info">
-                    <h3>Deadpool & Wolverine</h3>
+                    <h3>Deadpool &amp; Wolverine</h3>
                     <p>Action, Comedy</p>
                 </div>
             </div>
@@ -99,10 +99,11 @@ include 'header.php';
         </div>
     </div>
 
-</main>
-
+</div>
 <!-- Footer Section -->
-<?php include 'footer.php'; ?>
+<div class="footer">
+    <?php include 'footer.php'; ?>
+</div>
 </body>
 
 </html>
