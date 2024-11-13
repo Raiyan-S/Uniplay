@@ -652,8 +652,8 @@ form input[type="submit"]:hover {
 }
 
 .thumbnail {
-    width: 150px; /* Adjust as needed */
-    height: 100px; /* Adjust as needed */
+    width: 200px; /* Adjusted size for thumbnails */
+    height: 300px; /* Adjusted size for thumbnails */
     object-fit: cover; /* Ensure the image covers the area */
     border-radius: 0.3em; /* Rounded corners */
     cursor: pointer; /* Pointer on hover */
@@ -673,7 +673,8 @@ form input[type="submit"]:hover {
 }
 
 .large-image img {
-    max-width: 100%; /* Ensure the image is responsive */
+    max-width: 80%; /* Adjusted size for large image */
+    max-height: 600px; /* Adjusted size for large image */
     height: auto; /* Maintain aspect ratio */
     border-radius: 0.3em; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
