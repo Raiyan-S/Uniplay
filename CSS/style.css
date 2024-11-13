@@ -674,7 +674,7 @@ form input[type="submit"]:hover {
 
 .large-image img {
     max-width: 80%; /* Adjusted size for large image */
-    max-height: 600px; /* Adjusted size for large image */
+    max-height: 1200px; /* Adjusted size for large image */
     height: auto; /* Maintain aspect ratio */
     border-radius: 0.3em; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
