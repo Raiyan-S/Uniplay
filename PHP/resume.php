@@ -13,7 +13,7 @@ include 'header.php';
 <div class="resume-container" style="width: 90%; height: 800px; padding: 20px;">
     <h1>My Resume</h1>
     <!-- Embed PDF using the <object> tag -->
-    <object data="..\Resume\Resume.pdf" type="application/pdf" width="100%" height="100%">
+    <object data="..\Resume\Resume.pdf" type="application/pdf" width="100%" height="1200px">
         <p>Your browser does not support PDFs. <a href="..\Resume\Resume.pdf">Download the resume</a>.</p>
     </object>
 </div>
