@@ -759,3 +759,35 @@ form input[type="submit"]:hover {
     margin-bottom: 10px;
     color: #bb86fc; /* Unique caption color */
 }
+
+/* Video Page Styles */
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+    padding: 2em;
+    background-color: #1e1e1e; /* Background color for the video section */
+    border-radius: 0.5em; /* Optional: Add rounded corners */
+    color: #ffffff; /* Text color */
+}
+
+.video-container h1 {
+    margin-bottom: 1em;
+    color: #ffffff; /* Text color */
+}
+
+.video-container object {
+    width: 100%;
+    max-width: 800px; /* Maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    border: none; /* Remove border */
+    border-radius: 0.3em; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+.video-container p {
+    margin-top: 1em;
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center the text */
+}
