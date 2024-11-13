@@ -12,7 +12,7 @@ include 'header.php';
 <!-- Video Section -->
 <div class="video-container">
     <h1>Watch the Latest Featured Film Trailer</h1>
-    <object data="https://www.youtube.com/embed/wxN1T1uxQ2g" type="text/html" style="width: 100%; height: 600px;">
+    <object data="https://www.youtube.com/embed/wxN1T1uxQ2g" type="text/html" style="width: 100%; height: 800px;">
         <p>Your browser does not support embedded videos. You can watch the trailer on
             <a href="https://www.youtube.com/watch?v=wxN1T1uxQ2g">YouTube</a>.
         </p>
