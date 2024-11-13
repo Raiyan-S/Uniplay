@@ -13,10 +13,16 @@ include 'header.php';
 <div class="gallery">
     <h1>Picture Gallery</h1>
     <div class="thumbnails">
-        <img src="../Pictures/thumb1.jpg" alt="Thumbnail 1" class="thumbnail" onclick="showImage('../Pictures/image1.jpg')" />
-        <img src="../Pictures/thumb2.jpg" alt="Thumbnail 2" class="thumbnail" onclick="showImage('../Pictures/image2.jpg')" />
-        <img src="../Pictures/thumb3.jpg" alt="Thumbnail 3" class="thumbnail" onclick="showImage('../Pictures/image3.jpg')" />
-        <img src="../Pictures/thumb4.jpg" alt="Thumbnail 4" class="thumbnail" onclick="showImage('../Pictures/image4.jpg')" />
+        <img src="../Pictures/TheDarkKnight.jpg" alt="The Dark Knight" class="thumbnail" onclick="showImage('../Pictures/TheDarkKnight.jpg')" />
+        <img src="../Pictures/TheGodFather.jpg" alt="The Godfather" class="thumbnail" onclick="showImage('../Pictures/TheGodFather.jpg')" />
+        <img src="../Pictures/GravityFalls.jpg" alt="Gravity Falls" class="thumbnail" onclick="showImage('../Pictures/GravityFalls.jpg')" />
+        <img src="../Pictures/WhenTheySeeUs.jpg" alt="When They See Us" class="thumbnail" onclick="showImage('../Pictures/WhenTheySeeUs.jpg')" />
+        <img src="../Pictures/SpidermanAcrossTheSpiderverse.jpg" alt="Spider-Man: Across the Spider-Verse" class="thumbnail" onclick="showImage('../Pictures/SpidermanAcrossTheSpiderverse.jpg')" />
+        <img src="../Pictures/BreakingBad.jpg" alt="Breaking Bad" class="thumbnail" onclick="showImage('../Pictures/BreakingBad.jpg')" />
+        <img src="../Pictures/BluePlanetII.jpg" alt="Blue Planet II" class="thumbnail" onclick="showImage('../Pictures/BluePlanetII.jpg')" />
+        <img src="../Pictures/FullMetalAlchemistBrotherhood.jpg" alt="Fullmetal Alchemist: Brotherhood" class="thumbnail" onclick="showImage('../Pictures/FullMetalAlchemistBrotherhood.jpg')" />
+        <img src="../Pictures/DeadpoolANDWolverine.jpg" alt="Deadpool & Wolverine" class="thumbnail" onclick="showImage('../Pictures/DeadpoolANDWolverine.jpg')" />
+        <img src="../Pictures/TheOffice.jpg" alt="The Office" class="thumbnail" onclick="showImage('../Pictures/TheOffice.jpg')" />
     </div>
 
     <div class="large-image">
