@@ -17,7 +17,7 @@ Name: Raiyan Subedar -->
             <img src="Pictures/UniplayText.png" alt="Uniplay" class="logo-text" />
         </a>
         <ul class="nav-links">
-            <li><a href="index.php">Landing Page</a></li>
+            <li><a href="test.php">Landing Page</a></li>
             <li><a href="PHP/home.php">Home</a></li>
             <li><a href="PHP/services.php">Services</a></li>
             <li><a href="PHP/contact.php">Contact Us</a></li>
