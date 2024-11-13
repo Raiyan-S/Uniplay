@@ -21,7 +21,7 @@ include 'header.php';
         <img src="../Pictures/BreakingBad.jpg" alt="Breaking Bad" class="thumbnail" onclick="showImage('../Pictures/BreakingBad.jpg', 'Breaking Bad')" />
         <img src="../Pictures/BluePlanetII.jpg" alt="Blue Planet II" class="thumbnail" onclick="showImage('../Pictures/BluePlanetII.jpg', 'Blue Planet II')" />
         <img src="../Pictures/FullMetalAlchemistBrotherhood.jpg" alt="Fullmetal Alchemist: Brotherhood" class="thumbnail" onclick="showImage('../Pictures/FullMetalAlchemistBrotherhood.jpg', 'Fullmetal Alchemist: Brotherhood')" />
-        <img src="../Pictures/DeadpoolANDWolverine.jpg" alt="Deadpool & Wolverine" class="thumbnail" onclick="showImage('../Pictures/DeadpoolANDWolverine.jpg', 'Deadpool & Wolverine')" />
+        <img src="../Pictures/DeadpoolANDWolverine.jpg" alt="Deadpool &amp; Wolverine" class="thumbnail" onclick="showImage('../Pictures/DeadpoolANDWolverine.jpg', 'Deadpool &amp; Wolverine')" />
         <img src="../Pictures/TheOffice.jpg" alt="The Office" class="thumbnail" onclick="showImage('../Pictures/TheOffice.jpg', 'The Office')" />
     </div>
 
