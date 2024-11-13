@@ -668,16 +668,24 @@ form input[type="submit"]:hover {
 .large-image {
     margin-top: 2em;
     display: flex;
+    flex-direction: column; /* Stack image and caption vertically */
     justify-content: center;
     align-items: center;
 }
 
 .large-image img {
     max-width: 80%; /* Adjusted size for large image */
-    max-height: 1200px; /* Adjusted size for large image */
+    max-height: 1000px; /* Adjusted size for large image */
     height: auto; /* Maintain aspect ratio */
     border-radius: 0.3em; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+#image-caption {
+    color: #ffffff; /* Text color */
+    margin-top: 10px; /* Space above the caption */
+    font-size: 1.2em; /* Adjust font size */
+    text-align: center; /* Center the caption text */
 }
 
 /* Resume Page Styles */
