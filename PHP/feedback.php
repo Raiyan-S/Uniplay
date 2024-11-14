@@ -40,10 +40,11 @@ include 'header.php';
             <div>
                 <label for="rating">Rate Our Service:</label>
                 <select id="rating" name="rating">
-                    <option value="excellent">Excellent</option>
-                    <option value="good">Good</option>
-                    <option value="average">Average</option>
-                    <option value="poor">Poor</option>
+                    <option value="5">Excellent</option>
+                    <option value="4">Good</option>
+                    <option value="3">Average</option>
+                    <option value="2">Bad</option>
+                    <option value="1">Poor</option>
                 </select>
             </div>
             <div>
@@ -57,8 +58,8 @@ include 'header.php';
                 <label>Services Used:</label>
                 <input type="checkbox" id="service_movies" name="services" value="movies" />
                 <label for="service_movies">Movies</label>
-                <input type="checkbox" id="service_series" name="services" value="series" />
-                <label for="service_series">Series</label>
+                <input type="checkbox" id="service_series" name="services" value="shows" />
+                <label for="service_series">Shows</label>
             </div>
             <div>
                 <div>
