@@ -548,77 +548,32 @@ form input[type="submit"]:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 800px; /* Limit the width of the feedback section */
-    margin: 2em auto; /* Center the container */
+    margin: 2em;
     padding: 2em;
-    background-color: #1e1e1e;
-    border-radius: 0.5em;
+    background-color: #1e1e1e; /* Background color for the feedback section */
+    border-radius: 0.5em; /* Optional: Add rounded corners */
 }
 
 .feedback-wrapper h2 {
     margin-bottom: 1em;
-    text-align: center;
-    color: #ffffff;
+    text-align: center; /* Center the heading */
+    color: #ffffff; /* Text color */
 }
 
 .feedback-container {
     display: flex;
-    flex-direction: row; /* Align form and image horizontally */
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
 }
 
-form {
-    flex: 2; /* Adjust the flex to control form width */
-    max-width: 400px; /* Limit the form width */
+.form-container {
+    flex: 1;
     margin-right: 2em; /* Space between form and image */
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin: 0.5em 0 0.2em;
-}
-
-form input[type="text"],
-form input[type="email"],
-form input[type="submit"],
-form textarea,
-form select {
-    padding: 0.75em;
-    margin-bottom: 1em;
-    border: none;
-    border-radius: 0.3em;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea,
-form select {
-    background-color: #2a2a2a;
-    color: #ffffff;
-}
-
-form textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-form input[type="submit"] {
-    background-color: #6200ea;
-    color: #ffffff;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-form input[type="submit"]:hover {
-    background-color: #3700b3;
-    transform: scale(1.05);
 }
 
 .image-container {
-    flex: 1; /* Adjust the flex to control image width */
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -627,7 +582,52 @@ form input[type="submit"]:hover {
 .feedback-image {
     max-width: 100%;
     height: auto;
-    border-radius: 0.5em;
+    border-radius: 0.5em; /* Optional: Add rounded corners */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5em 0 0.2em; /* Spacing for labels */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="submit"],
+form textarea,
+form select {
+    padding: 0.75em;
+    margin-bottom: 1em; /* Spacing for inputs */
+    border: none;
+    border-radius: 0.3em; /* Rounded corners */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+    background-color: #2a2a2a; /* Input background color */
+    color: #ffffff; /* Input text color */
+}
+
+form textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px; /* Minimum height for textarea */
+}
+
+form input[type="submit"] {
+    background-color: #6200ea; /* Button background color */
+    color: #ffffff; /* Button text color */
+    cursor: pointer; /* Pointer on hover */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3700b3; /* Button hover color */
+    transform: scale(1.05);
 }
 
 /* Picture Gallery Styles */
