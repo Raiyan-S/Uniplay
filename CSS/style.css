@@ -575,7 +575,7 @@ form input[type="submit"]:hover {
 
 form {
     flex: 1; /* Allow form to take up only the necessary space */
-    max-width: 700px; /* Set a max-width to limit form size */
+    max-width: 100%; /* Prevent overflow */
     display: flex;
     flex-direction: column;
     padding: 1em;
