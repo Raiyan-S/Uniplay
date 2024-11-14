@@ -40,7 +40,7 @@ include 'header.php';
         <div class="video-trailer-container">
             <div class="video-trailer">
                 <h3>Trailer</h3>
-                <object data="https://www.youtube.com/embed/EXeTwQWrcwY" type="text/html" style="width:640px, height:360px">
+                <object data="https://www.youtube.com/embed/EXeTwQWrcwY" type="text/html" style="width:800px; height:450px;">
                     <p>Your browser does not support embedded videos. You can watch the trailer on
                         <a href="https://www.youtube.com/embed/EXeTwQWrcwY">YouTube</a>.
                     </p>
