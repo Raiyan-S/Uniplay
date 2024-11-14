@@ -569,7 +569,7 @@ form input[type="submit"]:hover {
 }
 
 .feedback-image {
-    max-width: 200px; /* Set a smaller max-width for the image */
+    max-width: 500px; /* Set a smaller max-width for the image */
     height: auto;
     border-radius: 0.5em; /* Optional: Add rounded corners */
 }
