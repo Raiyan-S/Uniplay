@@ -13,8 +13,23 @@ include 'header.php';
     <h1>Search for a Movie or Show</h1>
     <form method="post" action="search.php">
         <label for="title">Enter Title:</label>
-        <input type="text" name="title" id="title" />
+        <input type="text" name="title" id="title" required />
         <input type="submit" value="Search" />
+        <label for="tag">Search by Tag:</label>
+        <select name="tag" id="tag">
+            <option value="">--Select a Tag--</option>
+            <!-- Dynamically populate this with tags from your database -->
+            <?php
+            // Fetch tags from the database to populate the dropdown
+            $tag_sql = "SELECT * FROM tags";
+            $tag_result = $conn->query($tag_sql);
+            if ($tag_result->num_rows > 0) {
+                while ($tag_row = $tag_result->fetch_assoc()) {
+                    echo "<option value='" . htmlspecialchars($tag_row['tag_name']) . "'>" . htmlspecialchars($tag_row['tag_name']) . "</option>";
+                }
+            }
+            ?>
+        </select>
     </form>
 
     <?php
@@ -78,8 +93,8 @@ include 'header.php';
                         <option value="Show">Show</option>
                     </select>
 
-                    <label for="req_description">Description:</label>
-                    <textarea name="req_description" id="req_description"></textarea>
+                    <label for="req_email">Email:</label>
+                    <input type="text" name="req_email" id="req_email" required />
 
                     <input type="submit" value="Request Media" />
                 </form>
@@ -90,21 +105,19 @@ include 'header.php';
             $req_title = $conn->real_escape_string($_POST['req_title']);
             $req_genre = $conn->real_escape_string($_POST['req_genre']);
             $req_type = $conn->real_escape_string($_POST['req_type']);
-            $req_description = $conn->real_escape_string($_POST['req_description']);
+            $req_email = $conn->real_escape_string($_POST['req_email']);
 
-            // Debugging the input data
+            // Display the request information
             echo "<pre>";
             echo "Title: " . $req_title . "<br>";
             echo "Genre: " . $req_genre . "<br>";
             echo "Type: " . $req_type . "<br>";
-            echo "Description: " . $req_description . "<br>";
+            echo "Email: " . $req_email . "<br>";
             echo "</pre>";
 
             // SQL to insert the request into the database
-            $sql = "INSERT INTO requests (title, genre, type, description, request_date) VALUES ('$req_title', '$req_genre', '$req_type', '$req_description', NOW())";
+            $sql = "INSERT INTO requests (title, type, user_email, request_date) VALUES ('$req_title', '$req_type', '$req_email', NOW())";
 
-            // Debugging SQL query
-            echo "<pre>SQL: " . $sql . "</pre>";
 
             if ($conn->query($sql) === TRUE) {
                 echo "<p>Thank you for your request! We’ll review it shortly.</p>";
