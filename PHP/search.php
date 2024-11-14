@@ -38,25 +38,12 @@ include 'header.php';
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['title'])) {
-        $title = $conn->real_escape_string($_POST['title']);
+    if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-        // Check if searching or requesting media
-        if (isset($_POST['request'])) {
-            // Insert the requested media into the requests table
-            $req_title = $conn->real_escape_string($_POST['req_title']);
-            $req_genre = $conn->real_escape_string($_POST['req_genre']);
-            $req_type = $conn->real_escape_string($_POST['req_type']);
-            $req_description = $conn->real_escape_string($_POST['req_description']);
+        // Check if it's a search or a request
+        if (isset($_POST['title'])) {
+            $title = $conn->real_escape_string($_POST['title']);
 
-            $sql = "INSERT INTO requests (title, genre, type, description, request_date) VALUES ('$req_title', '$req_genre', '$req_type', '$req_description', NOW())";
-
-            if ($conn->query($sql) === TRUE) {
-                echo "<p>Thank you for your request! We’ll review it shortly.</p>";
-            } else {
-                echo "<p>Error: " . $conn->error . "</p>";
-            }
-        } else {
             // Search for media in the database
             $sql = "SELECT * FROM media WHERE title LIKE '%$title%'";
             $result = $conn->query($sql);
@@ -65,11 +52,12 @@ include 'header.php';
                 // Media found, display results
                 while ($row = $result->fetch_assoc()) {
                     echo "<div class='media-result'>";
-                    echo "<img src='" . htmlspecialchars($row['poster_url']) . "' alt='" . htmlspecialchars($row['title']) . " Poster' width='150' />";
+                    echo "<img src='../" . htmlspecialchars($row['poster_url']) . "' alt='" . htmlspecialchars($row['title']) . " Poster' width='150' />";
                     echo "<p>Title: " . htmlspecialchars($row['title']) . "</p>";
                     echo "<p>Type: " . htmlspecialchars($row['type']) . "</p>";
                     echo "<p>Genre: " . htmlspecialchars($row['genre']) . "</p>";
                     echo "<p>Release Year: " . htmlspecialchars($row['release_year']) . "</p>";
+                    echo "<p>Description: " . htmlspecialchars($row['description']) . "</p>"; // Displaying the description
                     echo "</div>";
                 }
             } else {
@@ -97,12 +85,38 @@ include 'header.php';
                 </form>
                 <?php
             }
+        } elseif (isset($_POST['request'])) {
+            // Insert the requested media into the requests table
+            $req_title = $conn->real_escape_string($_POST['req_title']);
+            $req_genre = $conn->real_escape_string($_POST['req_genre']);
+            $req_type = $conn->real_escape_string($_POST['req_type']);
+            $req_description = $conn->real_escape_string($_POST['req_description']);
+
+            // Debugging the input data
+            echo "<pre>";
+            echo "Title: " . $req_title . "<br>";
+            echo "Genre: " . $req_genre . "<br>";
+            echo "Type: " . $req_type . "<br>";
+            echo "Description: " . $req_description . "<br>";
+            echo "</pre>";
+
+            // SQL to insert the request into the database
+            $sql = "INSERT INTO requests (title, genre, type, description, request_date) VALUES ('$req_title', '$req_genre', '$req_type', '$req_description', NOW())";
+
+            // Debugging SQL query
+            echo "<pre>SQL: " . $sql . "</pre>";
+
+            if ($conn->query($sql) === TRUE) {
+                echo "<p>Thank you for your request! We’ll review it shortly.</p>";
+            } else {
+                echo "<p>Error: " . $conn->error . "</p>";
+            }
         }
     }
 
     $conn->close();
     ?>
-    
+
     <!-- Footer Section -->
     <?php include 'footer.php'; ?>
     </body>
