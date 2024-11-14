@@ -10,26 +10,11 @@ include 'header.php';
 
 <!-- Search Section -->
 <div class="search-container">
-    <h1>Search for a Movie or Show</h1>
+    <h1>Search for a Movie or Show.</h1>
     <form method="post" action="search.php">
         <label for="title">Enter Title:</label>
         <input type="text" name="title" id="title" required />
         <input type="submit" value="Search" />
-        <label for="tag">Search by Tag:</label>
-        <select name="tag" id="tag">
-            <option value="">--Select a Tag--</option>
-            <!-- Dynamically populate this with tags from your database -->
-            <?php
-            // Fetch tags from the database to populate the dropdown
-            $tag_sql = "SELECT * FROM tags";
-            $tag_result = $conn->query($tag_sql);
-            if ($tag_result->num_rows > 0) {
-                while ($tag_row = $tag_result->fetch_assoc()) {
-                    echo "<option value='" . htmlspecialchars($tag_row['tag_name']) . "'>" . htmlspecialchars($tag_row['tag_name']) . "</option>";
-                }
-            }
-            ?>
-        </select>
     </form>
 
     <?php
@@ -67,7 +52,7 @@ include 'header.php';
                 // Media found, display results
                 while ($row = $result->fetch_assoc()) {
                     echo "<div class='media-result'>";
-                    echo "<img src='../" . htmlspecialchars($row['poster_url']) . "' alt='" . htmlspecialchars($row['title']) . " Poster' width='150' />";
+                    echo "<img src='" . htmlspecialchars($row['poster_url']) . "' alt='" . htmlspecialchars($row['title']) . " Poster' width='150' />";
                     echo "<p>Title: " . htmlspecialchars($row['title']) . "</p>";
                     echo "<p>Type: " . htmlspecialchars($row['type']) . "</p>";
                     echo "<p>Genre: " . htmlspecialchars($row['genre']) . "</p>";
