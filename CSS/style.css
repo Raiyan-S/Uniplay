@@ -59,28 +59,8 @@ body, html {
     margin-left: auto; /* Push the auth links to the right */
 }
 
-/* Search Bar Styles */
-.search-bar {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
 
-.search-input {
-    width: 15em; /* Adjust width as needed */
-    padding: 0.5em;
-    background-color: #2a2a2a;
-    color: #ffffff;
-    border: none;
-    border-radius: 0.3em;
-    transition: background-color 0.3s ease;
-}
-
-.search-input:focus {
-    background-color: #373737; /* Darker background on focus */
-}
-
-.search-button, .login-btn, .signup-button, .guest-button, .details-btn, .more-button, .favorite-button {
+.login-btn, .signup-button, .guest-button, .details-btn, .more-button, .favorite-button {
     padding: 0.5em 1em;
     background-color: #6200ea;
     color: #ffffff;
@@ -88,10 +68,10 @@ body, html {
     border-radius: 0.3em;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    margin-left: 0.5em; /* Add space between the search bar and button */
+    margin-left: 0.5em;
 }
 
-.search-button:hover, .login-btn:hover, .signup-button:hover, .guest-button:hover, .details-btn:hover, .more-button:hover, .favorite-button:hover {
+.login-btn:hover, .signup-button:hover, .guest-button:hover, .details-btn:hover, .more-button:hover, .favorite-button:hover {
     background-color: #3700b3;
     transform: scale(1.05);
 }
@@ -270,6 +250,8 @@ section p {
 }
 
 form {
+    flex: 1;
+    margin-right: 2em; /* Space between form and image */
     display: flex;
     flex-direction: column;
 }
@@ -566,7 +548,7 @@ form input[type="submit"]:hover {
 /* Feedback Page Styles */
 .feedback-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin: 2em;
     padding: 2em;
@@ -574,29 +556,28 @@ form input[type="submit"]:hover {
     border-radius: 0.5em; /* Optional: Add rounded corners */
 }
 
-.feedback-container {
-    flex: 1; /* Take up available space */
+.feedback-wrapper h2 {
+    margin-bottom: 1em;
+    text-align: center; /* Center the heading */
     color: #ffffff; /* Text color */
-    margin-right: 2em; /* Space between form and image */
 }
 
-.feedback-container h2 {
-    margin-bottom: 1em;
+.feedback-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
 }
 
 form {
+    flex: 1;
+    margin-right: 2em; /* Space between form and image */
     display: flex;
     flex-direction: column;
 }
 
 form label {
     margin: 0.5em 0 0.2em; /* Spacing for labels */
-}
-
-.feedback-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 0.5em; /* Add rounded corners */
 }
 
 form input[type="text"],
@@ -633,6 +614,19 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #3700b3; /* Button hover color */
     transform: scale(1.05);
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5em; /* Optional: Add rounded corners */
 }
 
 /* Picture Gallery Styles */
