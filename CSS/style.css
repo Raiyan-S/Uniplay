@@ -575,7 +575,7 @@ form input[type="submit"]:hover {
 
 form {
     flex: 1; /* Allow form to take up only the necessary space */
-    max-width: 500px; /* Set a max-width to limit form size */
+    max-width: 700px; /* Set a max-width to limit form size */
     display: flex;
     flex-direction: column;
     padding: 1em;
@@ -590,7 +590,7 @@ form input[type="email"],
 form input[type="submit"],
 form textarea,
 form select {
-    width: 100%; /* Make inputs full width within form */
+    width: 90%; /* Make inputs full width within form */
     padding: 0.75em;
     margin-bottom: 1em; /* Spacing for inputs */
     border: none;
