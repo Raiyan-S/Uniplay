@@ -590,7 +590,6 @@ form input[type="email"],
 form input[type="submit"],
 form textarea,
 form select {
-    width: 90%; /* Make inputs full width within form */
     padding: 0.75em;
     margin-bottom: 1em; /* Spacing for inputs */
     border: none;
