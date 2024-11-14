@@ -59,6 +59,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Execute the statement
         if (mysqli_stmt_execute($insertStmt)) {
             echo "Feedback submitted successfully!";
+            header("Location: feedback.php");
+            exit(); 
         } else {
             echo "Error: Could not submit feedback.";
         }
