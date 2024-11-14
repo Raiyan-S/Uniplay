@@ -546,34 +546,36 @@ form input[type="submit"]:hover {
 /* Feedback Page Styles */
 .feedback-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
     margin: 2em;
     padding: 2em;
     background-color: #1e1e1e; /* Background color for the feedback section */
     border-radius: 0.5em; /* Optional: Add rounded corners */
 }
 
-.feedback-wrapper h2 {
+.feedback-wrapper h1 {
     margin-bottom: 1em;
     text-align: center; /* Center the heading */
     color: #ffffff; /* Text color */
 }
 
 .image-container {
-    flex: 1;
+    flex: 1; /* Take up available space */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 2em; /* Space between form and image */
 }
 
 .feedback-image {
-    max-width: 100%;
+    max-width: 200px; /* Set a smaller max-width for the image */
     height: auto;
     border-radius: 0.5em; /* Optional: Add rounded corners */
 }
 
 form {
+    flex: 2;
     display: flex;
     flex-direction: column;
 }
