@@ -68,7 +68,7 @@ include 'header.php';
         </fieldset>
         <br>
         <!-- Submit Button -->
-        <div>
+        <div class="submit-container">
             <input type="submit" value="Submit Feedback" />
         </div>
     </form>
