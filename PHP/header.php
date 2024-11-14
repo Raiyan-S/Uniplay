@@ -28,6 +28,7 @@ Name: Raiyan Subedar -->
             <li><a href="video.php">Video</a></li>
             <li><a href="feedback.php">Feedback Form</a></li>
             <li><a href="resume.php">Resume</a></li>
+            <li><a href="search.php">Search</a></li>
         </ul>
         <div class="auth-links">
             <a href="login.php" class="login-btn">Login</a>
