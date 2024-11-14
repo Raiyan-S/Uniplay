@@ -791,3 +791,126 @@ form input[type="submit"]:hover {
     color: #ffffff; /* Text color */
     text-align: center; /* Center the text */
 }
+
+/* Search Page Styles */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+    padding: 2em;
+    background-color: #1e1e1e; /* Background color for the search section */
+    border-radius: 0.5em; /* Optional: Add rounded corners */
+    color: #ffffff; /* Text color */
+}
+
+.search-container h1 {
+    margin-bottom: 1em;
+    text-align: center; /* Center the heading */
+    color: #ffffff; /* Text color */
+}
+
+.search-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Limit the width of the form */
+}
+
+.search-container label {
+    margin: 0.5em 0 0.2em; /* Spacing for labels */
+    color: #ffffff; /* Label text color */
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1em; /* Spacing for inputs */
+    border: none;
+    border-radius: 0.3em; /* Rounded corners */
+    background-color: #2a2a2a; /* Input background color */
+    color: #ffffff; /* Input text color */
+}
+
+.search-container input[type="submit"] {
+    background-color: #6200ea; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 0.3em; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.search-container input[type="submit"]:hover {
+    background-color: #3700b3; /* Button hover color */
+    transform: scale(1.05);
+}
+
+.media-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0;
+    padding: 2em;
+    background-color: #2a2a2a; /* Background color for media results */
+    border-radius: 0.5em; /* Optional: Add rounded corners */
+    color: #ffffff; /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+.media-result img {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+    border-radius: 0.3em; /* Rounded corners */
+    margin-bottom: 1em; /* Space below the image */
+}
+
+.media-result p {
+    margin: 0.5em 0; /* Spacing for paragraphs */
+    text-align: center; /* Center the text */
+}
+
+.request-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Limit the width of the form */
+    margin-top: 2em;
+}
+
+.request-form label {
+    margin: 0.5em 0 0.2em; /* Spacing for labels */
+    color: #ffffff; /* Label text color */
+}
+
+.request-form input[type="text"],
+.request-form input[type="url"],
+.request-form input[type="number"],
+.request-form textarea,
+.request-form select {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1em; /* Spacing for inputs */
+    border: none;
+    border-radius: 0.3em; /* Rounded corners */
+    background-color: #2a2a2a; /* Input background color */
+    color: #ffffff; /* Input text color */
+}
+
+.request-form input[type="submit"] {
+    background-color: #6200ea; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 0.3em; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.request-form input[type="submit"]:hover {
+    background-color: #3700b3; /* Button hover color */
+    transform: scale(1.05);
+}
