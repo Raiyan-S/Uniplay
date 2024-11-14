@@ -28,7 +28,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $age = filter_var($_POST['age'], FILTER_SANITIZE_NUMBER_INT);
     $rating = filter_var($_POST['rating'], FILTER_SANITIZE_NUMBER_INT);
     $recommend = filter_var($_POST['recommend'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    $services = filter_var($_POST['services'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    if (isset($_POST['services'])) {
+        // Join all selected values with a comma, in case multiple checkboxes are selected
+        $services = implode(", ", $_POST['services']);
+    } else {
+        $services = '';  // If no service is selected, set an empty string
+    }
     $feedback = filter_var($_POST['feedback'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
     // Check if the email already exists in the database

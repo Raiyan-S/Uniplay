@@ -56,9 +56,9 @@ include 'header.php';
             </div>
             <div>
                 <label>Services Used:</label>
-                <input type="checkbox" id="service_movies" name="services" value="movies" />
+                <input type="checkbox" id="service_movies" name="services[]" value="movies" />
                 <label for="service_movies">Movies</label>
-                <input type="checkbox" id="service_series" name="services" value="shows" />
+                <input type="checkbox" id="service_series" name="services[]" value="shows" />
                 <label for="service_series">Shows</label>
             </div>
             <div>
