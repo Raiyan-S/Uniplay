@@ -22,14 +22,14 @@ if (!$conn) {
 // Check if the form was submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form data with basic sanitation
-    $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-    $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
-    $age = filter_input(INPUT_POST, 'age', FILTER_SANITIZE_NUMBER_INT);
-    $rating = filter_input(INPUT_POST, 'rating', FILTER_SANITIZE_NUMBER_INT);
-    $recommend = filter_input(INPUT_POST, 'recommend', FILTER_SANITIZE_STRING);
-    $services = filter_input(INPUT_POST, 'services', FILTER_SANITIZE_STRING);
-    $feedback = filter_input(INPUT_POST, 'feedback', FILTER_SANITIZE_STRING);
+    $name = filter_var($_POST['name'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+    $phone = filter_var($_POST['phone'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $age = filter_var($_POST['age'], FILTER_SANITIZE_NUMBER_INT);
+    $rating = filter_var($_POST['rating'], FILTER_SANITIZE_NUMBER_INT);
+    $recommend = filter_var($_POST['recommend'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $services = filter_var($_POST['services'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $feedback = filter_var($_POST['feedback'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
     // Check if the email already exists in the database
     $checkEmailQuery = "SELECT * FROM feedback WHERE email = ?";
@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         ";
         $insertStmt = mysqli_prepare($conn, $insertQuery);
-        
+
         // Bind parameters to prevent SQL injection
         mysqli_stmt_bind_param($insertStmt, "sssissss", $email, $name, $phone, $age, $rating, $recommend, $services, $feedback);
 
