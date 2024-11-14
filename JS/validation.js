@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
             isValid = false;
         }
 
-        // Phone number validation (optional)
+        // Phone number validation
         const phonePattern = /^[0-9]{10}$/; // Example: 10-digit phone number
         if (!phonePattern.test(phone.value)) {
             alert("Please enter a valid 10-digit phone number.");

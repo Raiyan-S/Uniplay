@@ -82,6 +82,9 @@ include 'header.php';
 <!-- Footer Section -->
 <?php include 'footer.php'; ?>
 
+<!-- Feedback Form Validation -->
+<script src="../JS/validation.js"></script>
+
 </body>
 
 </html>
