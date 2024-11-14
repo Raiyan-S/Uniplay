@@ -62,11 +62,11 @@ include 'header.php';
             </div>
             <div>
                 <label for="feedback">Additional Feedback:</label>
-                <br>
+                <br/>
                 <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
             </div>
         </fieldset>
-        <br>
+        <br/>
         <!-- Submit Button -->
         <div class="submit-container">
             <input type="submit" value="Submit Feedback" />
