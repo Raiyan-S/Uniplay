@@ -61,12 +61,15 @@ include 'header.php';
                 <label for="service_series">Series</label>
             </div>
             <div>
-                <label for="feedback">Additional Feedback:</label>
-                <br/>
-                <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+                <div>
+                    <label for="feedback">Additional Feedback:</label>
+                </div>
+                <div>
+                    <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+                </div>
             </div>
         </fieldset>
-        <br/>
+        <br />
         <!-- Submit Button -->
         <div class="submit-container">
             <input type="submit" value="Submit Feedback" />
