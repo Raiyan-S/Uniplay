@@ -577,6 +577,7 @@ form input[type="submit"]:hover {
 .feedback-container {
     flex: 1; /* Take up available space */
     color: #ffffff; /* Text color */
+    margin-right: 2em; /* Space between form and image */
 }
 
 .feedback-container h2 {
@@ -590,6 +591,12 @@ form {
 
 form label {
     margin: 0.5em 0 0.2em; /* Spacing for labels */
+}
+
+.feedback-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5em; /* Add rounded corners */
 }
 
 form input[type="text"],

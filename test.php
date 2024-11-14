@@ -5,8 +5,6 @@ $password = "IHBIVKOIejGqXxLeJWmdbHYVBSolqvcQ";
 $dbname = "railway";
 $port = 3306;
 
-// Enable error reporting
-mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 try {
     // Create connection
