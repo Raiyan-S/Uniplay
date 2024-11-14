@@ -545,15 +545,15 @@ form input[type="submit"]:hover {
     border: none; /* Remove border */
 }
 
-/* Feedback Page Styles */
 .feedback-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2em;
+    max-width: 800px; /* Limit the width of the feedback section */
+    margin: 2em auto; /* Center the container */
     padding: 2em;
-    background-color: #1e1e1e; /* Background color for the feedback section */
-    border-radius: 0.5em; /* Optional: Add rounded corners */
+    background-color: #1e1e1e;
+    border-radius: 0.5em;
 }
 
 .feedback-wrapper h2 {
@@ -562,11 +562,12 @@ form input[type="submit"]:hover {
     color: #ffffff; /* Text color */
 }
 
-.feedback-container {
+form {
+    flex: 2; /* Adjust the flex to control form width */
+    max-width: 400px; /* Limit the form width */
+    margin-right: 2em; /* Space between form and image */
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
+    flex-direction: column;
 }
 
 form {
