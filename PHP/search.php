@@ -105,22 +105,20 @@ include '../Includes/header.php';
         } elseif (isset($_POST['request'])) {
             // Insert the requested media into the requests table
             $req_title = $conn->real_escape_string($_POST['req_title']);
-            $req_genre = $conn->real_escape_string($_POST['req_genre']);
             $req_type = $conn->real_escape_string($_POST['req_type']);
             $req_email = $conn->real_escape_string($_POST['req_email']);
 
             // Display the request information securely
             echo "<pre>";
             echo "Title: " . htmlspecialchars($req_title) . "<br />";
-            echo "Genre: " . htmlspecialchars($req_genre) . "<br />";
             echo "Type: " . htmlspecialchars($req_type) . "<br />";
             echo "Email: " . htmlspecialchars($req_email) . "<br />";
             echo "</pre>";
 
             // SQL to insert the request into the database using prepared statements
-            $sql = "INSERT INTO requests (title, genre, type, user_email, request_date) VALUES (?, ?, ?, ?, NOW())";
+            $sql = "INSERT INTO requests (title, type, user_email, request_date) VALUES (?, ?, ?, NOW())";
             $stmt = $conn->prepare($sql);
-            $stmt->bind_param("ssss", $req_title, $req_genre, $req_type, $req_email);
+            $stmt->bind_param("sss", $req_title, $req_type, $req_email);
 
             if ($stmt->execute()) {
                 echo "<p>Thank you for your request! We’ll review it shortly.</p>";
