@@ -7,7 +7,7 @@ Name: Raiyan Subedar -->
 <!-- index.php -->
 <?php
 $title = 'Uniplay - Landing Page';
-include 'PHP/indexHeader.php';
+include './Includes/indexHeader.php';
 ?>
 
 <!-- First Row: Welcome Section -->
@@ -53,7 +53,7 @@ include 'PHP/indexHeader.php';
 </div>
 
 <!-- Footer Section -->
-<?php include 'PHP/footer.php'; ?>
+<?php include './Includes/footer.php'; ?>
 </body>
 
 </html>
