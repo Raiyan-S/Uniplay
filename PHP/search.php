@@ -51,9 +51,13 @@ include '../Includes/header.php';
         if (isset($_POST['title'])) {
             $title = $conn->real_escape_string($_POST['title']);
 
-            // Search for media in the database
-            $sql = "SELECT * FROM media WHERE title LIKE '%$title%'";
-            $result = $conn->query($sql);
+            // Search for media in the database using prepared statements
+            $sql = "SELECT * FROM media WHERE title LIKE ?";
+            $stmt = $conn->prepare($sql);
+            $searchTerm = "%$title%";
+            $stmt->bind_param("s", $searchTerm);
+            $stmt->execute();
+            $result = $stmt->get_result();
 
             if ($result->num_rows > 0) {
                 // Media found, display results
@@ -105,22 +109,26 @@ include '../Includes/header.php';
             $req_type = $conn->real_escape_string($_POST['req_type']);
             $req_email = $conn->real_escape_string($_POST['req_email']);
 
-            // Display the request information
+            // Display the request information securely
             echo "<pre>";
-            echo "Title: " . $req_title . "<br />";
-            echo "Genre: " . $req_genre . "<br />";
-            echo "Type: " . $req_type . "<br />";
-            echo "Email: " . $req_email . "<br />";
+            echo "Title: " . htmlspecialchars($req_title) . "<br />";
+            echo "Genre: " . htmlspecialchars($req_genre) . "<br />";
+            echo "Type: " . htmlspecialchars($req_type) . "<br />";
+            echo "Email: " . htmlspecialchars($req_email) . "<br />";
             echo "</pre>";
 
-            // SQL to insert the request into the database
-            $sql = "INSERT INTO requests (title, type, user_email, request_date) VALUES ('$req_title', '$req_type', '$req_email', NOW())";
+            // SQL to insert the request into the database using prepared statements
+            $sql = "INSERT INTO requests (title, genre, type, user_email, request_date) VALUES (?, ?, ?, ?, NOW())";
+            $stmt = $conn->prepare($sql);
+            $stmt->bind_param("ssss", $req_title, $req_genre, $req_type, $req_email);
 
-            if ($conn->query($sql) === TRUE) {
+            if ($stmt->execute()) {
                 echo "<p>Thank you for your request! We’ll review it shortly.</p>";
             } else {
-                echo "<p>Error: " . $conn->error . "</p>";
+                echo "<p>Error: " . $stmt->error . "</p>";
             }
+
+            $stmt->close();
         }
     }
 
