@@ -126,13 +126,13 @@ include 'header.php';
 
     $conn->close();
     ?>
-
-    <!-- Search Validation -->
-    <script src="../JS/validation_search.js" type="text/javascript"></script>
-
-    <!-- Footer Section -->
-    <?php include 'footer.php'; ?>
-    </body>
 </div>
+
+<!-- Search Validation -->
+<script src="../JS/validation_search.js" type="text/javascript"></script>
+
+<!-- Footer Section -->
+<?php include 'footer.php'; ?>
+</body>
 
 </html>
