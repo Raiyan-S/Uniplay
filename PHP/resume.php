@@ -6,7 +6,7 @@ Name: Raiyan Subedar -->
 <!-- resume.php -->
 <?php
 $title = 'Uniplay - Resume';
-include 'header.php';
+include '../Includes/header.php';
 ?>
 
 <!-- Resume Section -->
@@ -19,7 +19,7 @@ include 'header.php';
 </div>
 
 <!-- Footer Section -->
-<?php include 'footer.php'; ?>
+<?php include '../Includes/footer.php'; ?>
 </body>
 
 </html>

@@ -6,7 +6,7 @@ Name: Raiyan Subedar -->
 <!-- picture.php -->
 <?php
 $title = 'Uniplay - Picture';
-include 'header.php';
+include '../Includes/header.php';
 ?>
 
 <!-- Picture Gallery Section -->
@@ -47,7 +47,7 @@ include 'header.php';
 <script type="text/javascript" src="../JS/script.js"></script>
 
 <!-- Footer Section -->
-<?php include 'footer.php'; ?>
+<?php include '../Includes/footer.php'; ?>
 </body>
 
 </html>

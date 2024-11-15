@@ -6,7 +6,7 @@ Name: Raiyan Subedar -->
 <!-- services.php -->
 <?php
 $title = 'Uniplay - Services';
-include 'header.php';
+include '../Includes/header.php';
 ?>
 
 <!-- Services Section -->
@@ -47,7 +47,7 @@ include 'header.php';
 </div>
 
 <!-- Footer Section -->
-<?php include 'footer.php'; ?>
+<?php include '../Includes/footer.php'; ?>
 </body>
 
 </html>

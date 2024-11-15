@@ -6,7 +6,7 @@ Name: Raiyan Subedar -->
 <!-- table.php -->
 <?php
 $title = 'Uniplay - Table';
-include 'header.php';
+include '../Includes/header.php';
 ?>
 
     <!-- Table Section -->
@@ -111,6 +111,6 @@ include 'header.php';
     </div>
 
     <!-- Footer Section -->
-    <?php include 'footer.php'; ?>
+    <?php include '../Includes/footer.php'; ?>
 </body>
 </html>

@@ -6,7 +6,7 @@ Name: Raiyan Subedar -->
 <!-- feedback.php -->
 <?php
 $title = 'Uniplay - Feedback';
-include 'header.php';
+include '../Includes/header.php';
 ?>
 
 <!-- Feedback Form Section -->
@@ -81,7 +81,7 @@ include 'header.php';
 </div>
 
 <!-- Footer Section -->
-<?php include 'footer.php'; ?>
+<?php include '../Includes/footer.php'; ?>
 
 <!-- Feedback Form Validation -->
 <script src="../JS/validation.js" type="text/javascript"></script>

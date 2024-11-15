@@ -6,7 +6,7 @@ Name: Raiyan Subedar -->
 
 <?php
 $title = 'Uniplay - Search Page';
-include 'header.php';
+include '../Includes/header.php';
 ?>
 
 <!-- Search Section -->
@@ -132,7 +132,7 @@ include 'header.php';
 <script src="../JS/validation_search.js" type="text/javascript"></script>
 
 <!-- Footer Section -->
-<?php include 'footer.php'; ?>
+<?php include '../Includes/footer.php'; ?>
 </body>
 
 </html>

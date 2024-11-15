@@ -6,7 +6,7 @@ Name: Raiyan Subedar -->
 <!-- register.php -->
 <?php
 $title = 'Uniplay - Register';
-include 'header.php';
+include '../Includes/header.php';
 ?>
 
 <!-- Main Content Below Navbar -->
@@ -53,7 +53,7 @@ include 'header.php';
 </div>
 
 <!-- Footer Section -->
-<?php include 'footer.php'; ?>
+<?php include '../Includes/footer.php'; ?>
 </body>
 
 </html>

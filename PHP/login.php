@@ -5,7 +5,7 @@ Name: Raiyan Subedar -->
 
 <!-- login.php -->
 <?php $title = 'Uniplay - Login';
-include 'header.php'; ?>
+include '../Includes/header.php'; ?>
 
 <!-- Main Content Below Navbar -->
 <div class="login-wrapper">
@@ -37,7 +37,7 @@ include 'header.php'; ?>
 </div>
 
 <!-- Footer Section -->
-<?php include 'footer.php'; ?>
+<?php include '../Includes/footer.php'; ?>
 </body>
 
 </html>

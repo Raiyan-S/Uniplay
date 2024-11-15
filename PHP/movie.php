@@ -6,7 +6,7 @@ Name: Raiyan Subedar -->
 <!-- movie.php -->
 <?php
 $title = 'Uniplay - Movie Page';
-include 'header.php';
+include '../Includes/header.php';
 ?>
 
 <!-- Main Content -->
@@ -52,7 +52,7 @@ include 'header.php';
 
 <!-- Footer Section -->
 <div class="footer">
-    <?php include 'footer.php'; ?>
+    <?php include '../Includes/footer.php'; ?>
 </div>
 </body>
 

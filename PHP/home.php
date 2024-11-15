@@ -6,7 +6,7 @@ Name: Raiyan Subedar -->
 <!-- home.php -->
 <?php
 $title = 'Uniplay - Home Page';
-include 'header.php';
+include '../Includes/header.php';
 ?>
 
 <!-- Main Content -->
@@ -104,7 +104,7 @@ include 'header.php';
 </div>
 
 <!-- Footer Section -->
-<?php include 'footer.php'; ?>
+<?php include '../Includes/footer.php'; ?>
 
 </body>
 
