@@ -17,7 +17,7 @@ include 'header.php';
             <label for="title">Enter Title:</label>
         </div>
         <div>
-            <input type="text" name="title" id="title"/>
+            <input type="text" name="title" id="title" />
         </div>
         <div>
             <input type="submit" value="Search" />
@@ -133,5 +133,6 @@ include 'header.php';
     <!-- Footer Section -->
     <?php include 'footer.php'; ?>
     </body>
+</div>
 
 </html>
