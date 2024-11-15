@@ -49,7 +49,7 @@ include '../Includes/header.php';
             </div>
             <div>
                 <label>Would you recommend us?</label>
-                <input type="radio" id="recommend_yes" name="recommend" value="yes" />
+                <input type="radio" id="recommend_yes" name="recommend" value="yes" checked="checked" />
                 <label for="recommend_yes">Yes</label>
                 <input type="radio" id="recommend_no" name="recommend" value="no" />
                 <label for="recommend_no">No</label>
