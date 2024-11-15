@@ -3,6 +3,7 @@ Name: Raiyan Subedar -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <!-- search.php -->
+ 
 <?php
 $title = 'Uniplay - Search Page';
 include 'header.php';
@@ -12,9 +13,15 @@ include 'header.php';
 <div class="search-container">
     <h1>Search for a Movie or Show.</h1>
     <form method="post" action="search.php">
-        <label for="title">Enter Title:</label>
-        <input type="text" name="title" id="title" required />
-        <input type="submit" value="Search" />
+        <div>
+            <label for="title">Enter Title:</label>
+        </div>
+        <div>
+            <input type="text" name="title" id="title" required="required" />
+        </div>
+        <div>
+            <input type="submit" value="Search" />
+        </div>
     </form>
 
     <?php
@@ -66,22 +73,28 @@ include 'header.php';
                 ?>
                 <form method="post" action="search.php">
                     <input type="hidden" name="request" value="1" />
-                    <label for="req_title">Title:</label>
-                    <input type="text" name="req_title" id="req_title" required />
-
-                    <label for="req_genre">Genre:</label>
-                    <input type="text" name="req_genre" id="req_genre" required />
-
-                    <label for="req_type">Type:</label>
-                    <select name="req_type" id="req_type">
-                        <option value="Movie">Movie</option>
-                        <option value="Show">Show</option>
-                    </select>
-
-                    <label for="req_email">Email:</label>
-                    <input type="text" name="req_email" id="req_email" required />
-
-                    <input type="submit" value="Request Media" />
+                    <div>
+                        <label for="req_title">Title:</label>
+                        <input type="text" name="req_title" id="req_title" required="required" />
+                    </div>
+                    <div>
+                        <label for="req_genre">Genre:</label>
+                        <input type="text" name="req_genre" id="req_genre" required="required" />
+                    </div>
+                    <div>
+                        <label for="req_type">Type:</label>
+                        <select name="req_type" id="req_type">
+                            <option value="Movie">Movie</option>
+                            <option value="Show">Show</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="req_email">Email:</label>
+                        <input type="text" name="req_email" id="req_email" required="required" />
+                    </div>
+                    <div>
+                        <input type="submit" value="Request Media" />
+                    </div>
                 </form>
                 <?php
             }
@@ -94,15 +107,14 @@ include 'header.php';
 
             // Display the request information
             echo "<pre>";
-            echo "Title: " . $req_title . "<br>";
-            echo "Genre: " . $req_genre . "<br>";
-            echo "Type: " . $req_type . "<br>";
-            echo "Email: " . $req_email . "<br>";
+            echo "Title: " . $req_title . "<br />";
+            echo "Genre: " . $req_genre . "<br />";
+            echo "Type: " . $req_type . "<br />";
+            echo "Email: " . $req_email . "<br />";
             echo "</pre>";
 
             // SQL to insert the request into the database
             $sql = "INSERT INTO requests (title, type, user_email, request_date) VALUES ('$req_title', '$req_type', '$req_email', NOW())";
-
 
             if ($conn->query($sql) === TRUE) {
                 echo "<p>Thank you for your request! We’ll review it shortly.</p>";
