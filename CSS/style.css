@@ -260,7 +260,6 @@ form label {
 
 form input[type="email"],
 form input[type="password"],
-form input[type="text"],
 form input[type="submit"],
 form textarea {
     width: 70%;
@@ -589,6 +588,18 @@ form label {
 
 form input[type="text"],
 form input[type="email"],
+form input[type="submit"],
+form textarea,
+form select {
+    width: 70%;
+    padding: 0.75em;
+    margin-bottom: 1em; /* Spacing for inputs */
+    border: none;
+    border-radius: 0.3em; /* Rounded corners */
+}
+
+form input[type="text"],
+form input[type="email"],
 form textarea,
 form select {
     background-color: #2a2a2a; /* Input background color */
@@ -603,6 +614,18 @@ form textarea {
 .submit-container {
     display: flex;
     justify-content: center; /* Center the submit button */
+}
+
+form input[type="submit"] {
+    background-color: #6200ea; /* Button background color */
+    color: #ffffff; /* Button text color */
+    cursor: pointer; /* Pointer on hover */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3700b3; /* Button hover color */
+    transform: scale(1.05);
 }
 
 /* Picture Gallery Styles */
@@ -810,17 +833,22 @@ form textarea {
     color: #ffffff; /* Input text color */
 }
 
-.search-container input[type="submit"] {
+.search-container input[type="submit"],
+.request-form input[type="submit"] {
     background-color: #6200ea; /* Button background color */
     color: #ffffff; /* Button text color */
-    padding: 0.75em 1.5em;
+    padding: 0.75em 1.5em; /* Adjust padding for better size */
     border: none;
     border-radius: 0.3em; /* Rounded corners */
     cursor: pointer; /* Pointer on hover */
     transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 1em; /* Ensure text is readable */
+    width: auto; /* Allow button to adjust width based on content */
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
-.search-container input[type="submit"]:hover {
+.search-container input[type="submit"]:hover,
+.request-form input[type="submit"]:hover {
     background-color: #3700b3; /* Button hover color */
     transform: scale(1.05);
 }
@@ -875,4 +903,19 @@ form textarea {
     border-radius: 0.3em; /* Rounded corners */
     background-color: #2a2a2a; /* Input background color */
     color: #ffffff; /* Input text color */
+}
+
+.request-form input[type="submit"] {
+    background-color: #6200ea; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 0.3em; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.request-form input[type="submit"]:hover {
+    background-color: #3700b3; /* Button hover color */
+    transform: scale(1.05);
 }
