@@ -82,10 +82,6 @@ include '../Includes/header.php';
                         <input type="text" name="req_title" id="req_title" required="required" />
                     </div>
                     <div>
-                        <label for="req_genre">Genre:</label>
-                        <input type="text" name="req_genre" id="req_genre" required="required" />
-                    </div>
-                    <div>
                         <label for="req_type">Type:</label>
                         <select name="req_type" id="req_type">
                             <option value="Movie">Movie</option>
