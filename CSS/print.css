@@ -6,9 +6,7 @@
 
     .episode-schedule {
         visibility: visible;
-        /* Show the table */
         width: 100%;
-        /* Ensure table takes full width */
         border: 1px solid #000;
         border-collapse: collapse;
     }
@@ -27,13 +25,10 @@
 
     .release-schedule {
         visibility: visible;
-        /* Show the table */
         width: 100%;
-        /* Ensure table takes full width */
         border: 1px solid #000;
         border-collapse: collapse;
         margin: 0;
-        /* Remove any margin */
     }
 
     .release-schedule th,
@@ -42,19 +37,15 @@
         padding: 8px;
         text-align: left;
         background-color: #fff;
-        /* Ensure background is white for printing */
         color: #000;
-        /* Ensure text color is black for printing */
     }
 
     .release-schedule caption {
         font-size: 1.5em;
         margin-bottom: 10px;
         color: #000;
-        /* Ensure caption text color is black for printing */
     }
 
-    /* Hide footer and navbar when printing */
     .footer,
     .navbar {
         display: none;
