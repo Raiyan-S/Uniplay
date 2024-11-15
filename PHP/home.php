@@ -16,7 +16,7 @@ include 'header.php';
             <h1>Everything Everywhere All at Once</h1>
             <p>Action, Drama</p>
         </div>
-        <button class="details-btn">Details</button>
+        <a href="video.php" class="details-btn">Trailer</a>
     </div>
     <!-- First Row: Movie/Show Posters -->
     <div class="home-first-row">
@@ -103,8 +103,6 @@ include 'header.php';
 
 </div>
 
-<!-- Scroll Javascript -->
-<script src="../JS/scroll.js"></script>
 <!-- Footer Section -->
 <?php include 'footer.php'; ?>
 
