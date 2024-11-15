@@ -3,7 +3,7 @@ Name: Raiyan Subedar -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <!-- search.php -->
- 
+
 <?php
 $title = 'Uniplay - Search Page';
 include 'header.php';
@@ -17,7 +17,7 @@ include 'header.php';
             <label for="title">Enter Title:</label>
         </div>
         <div>
-            <input type="text" name="title" id="title" required="required" />
+            <input type="text" name="title" id="title"/>
         </div>
         <div>
             <input type="submit" value="Search" />
@@ -126,6 +126,9 @@ include 'header.php';
 
     $conn->close();
     ?>
+
+    <!-- Feedback Form Validation -->
+    <script src="../JS/validation.js" type="text/javascript"></script>
 
     <!-- Footer Section -->
     <?php include 'footer.php'; ?>
