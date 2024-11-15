@@ -24,6 +24,7 @@ include 'header.php'; ?>
 
             <div>
                 <label for="message">Message:</label>
+                <br />
                 <textarea id="message" name="message" rows="5" cols="30"></textarea>
             </div>
 
