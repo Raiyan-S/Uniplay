@@ -103,6 +103,8 @@ include 'header.php';
 
 </div>
 
+<!-- Scroll Javascript -->
+<script src="../JS/scroll.js"></script>
 <!-- Footer Section -->
 <?php include 'footer.php'; ?>
 
