@@ -127,8 +127,8 @@ include 'header.php';
     $conn->close();
     ?>
 
-    <!-- Feedback Form Validation -->
-    <script src="../JS/validation.js" type="text/javascript"></script>
+    <!-- Search Validation -->
+    <script src="../JS/validation_search.js" type="text/javascript"></script>
 
     <!-- Footer Section -->
     <?php include 'footer.php'; ?>
