@@ -11,7 +11,7 @@ Name: Raiyan Subedar -->
     </div>
     <div class="footer-icons">
         <p>
-            <a href="https://validator.w3.org/check?uri=uniplay-f746c372dd50.herokuapp.com/PHP/home.php"><img
+            <a href="https://validator.w3.org/check?uri=uniplay-production.up.railway.app"><img
                     src="https://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31"
                     width="88" /></a>
         </p>
