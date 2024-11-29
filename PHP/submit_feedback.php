@@ -1,5 +1,5 @@
 <?php
-// Database URL (replace with your actual URL)
+// Database URL 
 $database_url = "mysql://root:IHBIVKOIejGqXxLeJWmdbHYVBSolqvcQ@mysql.railway.internal:3306/railway";
 
 // Parse the URL
