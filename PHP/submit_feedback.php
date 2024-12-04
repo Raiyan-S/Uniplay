@@ -75,15 +75,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 mysqli_close($conn);
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<div>
     <title>Submit Feedback</title>
     <link rel="stylesheet" href="../CSS/style.css">
-</head>
-<body>
+</div>
+<div>
     <?php include '../Includes/header.php'; ?>
     <div class="feedback-wrapper">
         <div class="feedback-container">
@@ -95,5 +93,5 @@ mysqli_close($conn);
     </div>
 
     <?php include '../Includes/footer.php'; ?>
-</body>
+</div>
 </html>
