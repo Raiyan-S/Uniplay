@@ -81,7 +81,7 @@ mysqli_close($conn);
 $title = 'Uniplay - Feedback';
 include '../Includes/header.php';
 ?>
-<body>
+
     <div class="feedback-wrapper">
         <div class="feedback-container">
             <h1>Submit Feedback</h1>
@@ -90,8 +90,7 @@ include '../Includes/header.php';
             <?php endif; ?>
         </div>
     </div>
-    <div>
-        <?php include '../Includes/footer.php'; ?>
-    </div>
-</body>
+    <?php include '../Includes/footer.php'; ?>
+    </body>
+
 </html>
