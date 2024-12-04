@@ -6,9 +6,9 @@ Name: Raiyan Subedar -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><?php echo $title ?? 'Uniplay'; ?></title>
-    <link rel="stylesheet" href="../CSS/style.css" />
-    <link rel="stylesheet" href="../CSS/print.css" media="print" />
+    <title><?php echo htmlspecialchars($title ?? 'Uniplay', ENT_QUOTES, 'UTF-8'); ?></title>
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css" />
+    <link rel="stylesheet" href="../CSS/print.css" type="text/css" media="print" />
 </head>
 
 <body>
