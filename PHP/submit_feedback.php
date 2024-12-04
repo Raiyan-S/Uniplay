@@ -81,76 +81,19 @@ mysqli_close($conn);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit Feedback</title>
-    <link rel="stylesheet" href="path/to/your/theme.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
-    <?php include 'header.php'; ?>
-
+    <?php include '../Includes/header.php'; ?>
     <div class="feedback-wrapper">
         <div class="feedback-container">
             <h1>Submit Feedback</h1>
             <?php if (isset($message)): ?>
                 <p class="message"><?php echo htmlspecialchars($message); ?></p>
             <?php endif; ?>
-            <form action="submit_feedback.php" method="post">
-                <fieldset>
-                    <legend>Personal Information</legend>
-                    <div>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required />
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required />
-                    </div>
-                    <div>
-                        <label for="phone">Phone:</label>
-                        <input type="text" id="phone" name="phone" required />
-                    </div>
-                    <div>
-                        <label for="age">Age:</label>
-                        <input type="number" id="age" name="age" required />
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Your Feedback</legend>
-                    <div>
-                        <label for="rating">Rate Our Service:</label>
-                        <select id="rating" name="rating" required>
-                            <option value="5">Excellent</option>
-                            <option value="4">Good</option>
-                            <option value="3">Average</option>
-                            <option value="2">Bad</option>
-                            <option value="1">Poor</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label>Would you recommend us?</label>
-                        <input type="radio" id="recommend_yes" name="recommend" value="yes" checked />
-                        <label for="recommend_yes">Yes</label>
-                        <input type="radio" id="recommend_no" name="recommend" value="no" />
-                        <label for="recommend_no">No</label>
-                    </div>
-                    <div>
-                        <label>Services Used:</label>
-                        <input type="checkbox" id="service_movies" name="services[]" value="movies" />
-                        <label for="service_movies">Movies</label>
-                        <input type="checkbox" id="service_series" name="services[]" value="series" />
-                        <label for="service_series">Series</label>
-                    </div>
-                    <div>
-                        <label for="feedback">Additional Feedback:</label>
-                        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
-                    </div>
-                </fieldset>
-                <div class="submit-container">
-                    <input type="submit" value="Submit Feedback" />
-                </div>
-            </form>
         </div>
     </div>
 
-    <?php include 'footer.php'; ?>
+    <?php include '../Includes/footer.php'; ?>
 </body>
 </html>
